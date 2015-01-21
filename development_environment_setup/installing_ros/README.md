@@ -14,7 +14,7 @@ Run the following scripts to install ROS.
 
 **install_pr2.sh**: Installs PR2 packages (for Groovy). See the [official instructions](http://wiki.ros.org/Robots/PR2/groovy) for more information.
 
-**install_turtlebot**: Installs Turtlebot packages (for Hydro). See the [official instructions](http://wiki.ros.org/turtlebot/Tutorials/hydro/Installation) for more information.
+**install_turtlebot.sh**: Installs Turtlebot packages (for Hydro). See the [official instructions](http://wiki.ros.org/turtlebot/Tutorials/hydro/Installation) for more information.
 
 ## Sample
 ```
