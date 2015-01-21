@@ -14,6 +14,7 @@ function setros() {
 }
 source /opt/ros/groovy/setup.bash # Default to groovy. Change this to default to Hydro if you want.
 export ROS_HOSTNAME=localhost # Optional, the name of this computer.
+export ROS_MASTER_HOST=localhost # Used to inform us what robot we're connected to.
 export ROS_MASTER_URI=http://localhost:11311 # The location of the ROS master.
 export ROBOT=sim # The type of robot.
 
@@ -24,6 +25,11 @@ function my_ip() {
     echo ${MY_IP:-"Not connected"}
 }
 
+# Terminal prompt formatting, optional.
+# Makes your terminal look like [host ~/dir (c1)], in purple.
+# Search for "bash ps1" online to learn more.
+PS1='\[\e[1;35m\][\h \w ($ROS_MASTER_HOST)]$ \[\e[m\]'
+
 # Run "setrobot sim" to go to simulation.
 # Run "setrobot c1" to connect to Rosie.
 # Run "setrobot softshell" to connect to a turtlebot.
@@ -31,11 +37,13 @@ function my_ip() {
 function setrobot() {
   if [ "$1" = "sim" ]; then
     export ROS_HOSTNAME=localhost;
+    export ROS_MASTER_HOST=localhost;
     export ROS_MASTER_URI=http://localhost:11311;
     export ROBOT=sim;
   else
     unset ROBOT;
     unset ROS_HOSTNAME;
+    export ROS_MASTER_HOST=$1;
     export ROS_MASTER_URI=http://$1.cs.washington.edu:11311;
     export ROS_IP=`my_ip`;
   fi
