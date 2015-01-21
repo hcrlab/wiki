@@ -4,6 +4,7 @@ If you are going to work with the PR2, we recommend installing ROS Groovy on Ubu
 
 If you are working with the Turtlebot, you can install a newer version of ROS, such as Hydro.
 
+## 1. Install ROS
 Run the following scripts to install ROS.
 
 **install_ros_groovy.sh**: Installs ROS Groovy. See the [official instructions](http://wiki.ros.org/groovy/Installation/Ubuntu) for more information.
@@ -16,9 +17,16 @@ Run the following scripts to install ROS.
 
 **install_turtlebot.sh**: Installs Turtlebot packages (for Hydro). See the [official instructions](http://wiki.ros.org/turtlebot/Tutorials/hydro/Installation) for more information.
 
-## Sample
+Installation should take about an hour.
+
 ```
 sudo ./install_utils.sh
-sudo ./install_ros_groovy.sh # or sudo ./install_ros_hydro.sh
-sudo ./install_pr2.sh # or sudo ./install_turtle.sh
+sudo ./install_ros_groovy.sh
+sudo ./install_pr2.sh
+```
+
+## 2. Initialize rosdep
+```
+sudo rosdep init
+rosdep update
 ```
