@@ -6,7 +6,7 @@ There are a few things to customize:
 - `source ~/catkin_ws/devel/setup.bash`: Not included in this .bashrc. Add it if you frequently work with a particular catkin workspace.
 - `MY_IP=$(/sbin/ifconfig eth0 ...`: `eth0` is the name of the network device. If you are on a laptop, you most likely will need to change `eth0` to `wlan0`. You can check the list of network devices by typing `ifconfig`.
 
-```
+```bash
 # Call "setros groovy" or "setros hydro" to switch between them.
 # Runs setup commands for ROS stuff.
 function setros() {
