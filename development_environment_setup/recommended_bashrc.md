@@ -1,3 +1,4 @@
+# Recommended .bashrc
 We like to add the following to our .bashrc.
 
 There are a few things to customize:
@@ -51,3 +52,6 @@ function setrobot() {
   fi
 }
 ```
+
+## Other resources
+Check out Mike Chung's [dotfiles](https://github.com/mjyc/dotfiles)
