@@ -13,20 +13,18 @@ Run the following scripts to install ROS.
 
 **install_utils.sh**: Installs miscellaneous utilities (vim, git, meld, and tmux).
 
-**install_pr2.sh**: Installs PR2 packages (for Groovy). See the [official instructions](http://wiki.ros.org/Robots/PR2/groovy) for more information.
+**install_pr2_groovy.sh**: Installs PR2 packages (for Groovy). Run `rosdep update` after running this script. See the [official instructions](http://wiki.ros.org/Robots/PR2/groovy) for more information.
+
+**install_pr2_hydro.sh**: Installs PR2 packages (for Hydro). Run `rosdep update` after running this script. See the [official instructions](http://wiki.ros.org/Robots/PR2/hydro) for more information.
 
 **install_turtlebot.sh**: Installs Turtlebot packages (for Hydro). See the [official instructions](http://wiki.ros.org/turtlebot/Tutorials/hydro/Installation) for more information.
 
 Installation should take about an hour.
 
+Example:
 ```
 sudo ./install_utils.sh
 sudo ./install_ros_groovy.sh
-sudo ./install_pr2.sh
-```
-
-## 2. Initialize rosdep
-```
-sudo rosdep init
 rosdep update
+sudo ./install_pr2_groovy.sh
 ```
