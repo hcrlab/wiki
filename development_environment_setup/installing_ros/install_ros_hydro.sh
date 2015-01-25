@@ -5,3 +5,4 @@ wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | apt-k
 apt-get update;
 apt-get -y install ros-hydro-desktop-full;
 echo "source /opt/ros/hydro/setup.bash" >> ~/.bashrc;
+rosdep init;
