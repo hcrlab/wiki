@@ -47,6 +47,17 @@ function setrobot() {
   fi
 }
 
+# Turn your computer into a Gazebo server that others can use.
+# You run: hostrobot, then roslaunch pr2_gazebo...
+# Then others can run: setrobot labmachinename
+function hostrobot() {
+  export ROS_HOSTNAME=labmachinename.cs.washington.edu
+  export ROS_MASTER_URI=http://labmachinename.cs.washington.edu:11311
+  export DISPLAY=:0
+  export ROS_IP=`my_ip`
+  export ROBOT=sim
+}
+
 # Run this from the root of your catkin_ws to run rosdep update.
 function getdeps() {
   rosdep install --from-paths src --ignore-src --rosdistro=$ROS_DISTRO -y
