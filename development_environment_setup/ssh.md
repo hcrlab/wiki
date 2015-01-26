@@ -66,6 +66,7 @@ sudo apt-get install openssh-server
 After that, you should be able to log in, using your IP address as the hostname.
 
 If you're on the CSE network and don't already have a fancy hostname (e.g., you brought a personal laptop to school to use as a permanent work computer), do the following steps:
+
 1. [Register your computer](https://norfolk.cs.washington.edu/htbin-post/lab/RegisterMAC.cgi) with the desired hostname
 2. `sudo vim /etc/hostname` and replace whatever's there with your chosen hostname
 3. `sudo vim /etc/hosts` and add an entry mapping 127.0.1.1 to your chosen hostname
