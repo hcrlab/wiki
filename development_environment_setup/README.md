@@ -23,3 +23,6 @@ catkin_make
 
 ## 4. Set up your .bashrc
 Copy the [recommended .bashrc](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/recommended_bashrc.md) to the end of your ~/.bashrc file. Be sure to update it according to what ROS distro you're using, whether you're on a desktop or laptop, etc.
+
+## Other resources
+[Running Gazebo on a remote machine](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/remote_gazebo.md). Gazebo running slowly on your laptop? See how to run Gazebo on a lab computer instead.
