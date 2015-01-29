@@ -6,7 +6,7 @@ You basically need 2 packages in order to do voice recognition.
   
   Either: http://cmusphinx.sourceforge.net/wiki/tutorialpocketsphinx#installation and http://cmusphinx.sourceforge.net/wiki/download
   
-  Or: sudo apt-get install ros-<version>-pocketsphinx <- This method not guaranteed to contain lmtool
+  Or: sudo apt-get install ros-VERSION-pocketsphinx <- This method not guaranteed to contain lmtool
   
 2. Install Sphinxbase:
   
