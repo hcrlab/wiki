@@ -30,5 +30,8 @@ See the [SSH guide](https://github.com/hcrlab/wiki/blob/master/development_envir
 1. Create SSH keys
 2. Add your public key to Github
 
+## PR2
+If you are creating an account on the PR2, see the guide for [getting set up on the PR2](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/pr2.md).
+
 ## Other resources
 [Running Gazebo on a remote machine](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/remote_gazebo.md). Gazebo running slowly on your laptop? See how to run Gazebo on a lab computer instead.
