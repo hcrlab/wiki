@@ -24,6 +24,10 @@ sudo ls
 Add the following line to the end of your .bashrc on the robot. This only needs to be done on the PR2.
 ```bash
 export ROS_ENV_LOADER=/etc/ros/distro/env.sh
+export ROS_HOSTNAME=c1
+export ROS_MASTER_HOST=c1
+export ROS_MASTER_URI=http://c1:11311
+export ROBOT=pr2
 ```
 
 Note /etc/ros/distro is a symlink to either /etc/ros/groovy or /etc/ros/hydro, etc.
