@@ -24,7 +24,7 @@ function my_ip() {
 }
 
 # Terminal prompt formatting, optional.
-# Makes your terminal look like [host ~/dir (c1)], in purple.
+# Makes your terminal look like [host (c1) ~/dir], in purple.
 # Search for "bash ps1" online to learn more.
 PS1='\[\e[1;35m\][\h \w ($ROS_MASTER_HOST)]$ \[\e[m\]'
 
