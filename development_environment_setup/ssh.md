@@ -9,26 +9,26 @@ If you are on Linux or Mac OS X, open a terminal. If you are on Windows, downloa
 Let's say you want to log into the lab machine roomba with the username husky.
 
 If you're using a terminal, type:
-```
+```bash
 ssh husky@roomba.cs.washington.edu
 ```
 
 If you're using Windows or another SSH client, then you will need to specify the username (e.g., husky) and the hostname: (e.g., roomba.cs.washington.edu).
 
 If you are on the CSE network (i.e., on a lab machine or on CSE-Local), you can omit the cs.washington.edu:
-```
+```bash
 ssh husky@roomba
 ```
 
 If the username of the computer you're on is the same as the username you'd like to log in with, you can omit the username as well:
-```
+```bash
 ssh roomba
 ```
 
 You now have a shell, as if you were physically sitting at that computer.
 
 You can also log into a computer by its IP address, if it doesn't have a hostname that can be looked up:
-```
+```bash
 ssh husky@128.208.5.151
 ```
 
@@ -50,7 +50,7 @@ The keys should appear in ~/.ssh/. Your public key is id_rsa.pub, and your priva
 ### Using SSH keys to log in without a password
 
 Using your newly created SSH keys, you can log into a computer (say, roomba) without a password. Assuming you have an account on roomba, you can type:
-```
+```bash
 ssh-copy-id husky@roomba
 ```
 
@@ -59,7 +59,7 @@ After this, you should be able to log in to roomba without a password.
 ### How to make your computer SSH-able
 
 If you can't already SSH into your computer, you may need to install OpenSSH:
-```
+```bash
 sudo apt-get install openssh-server
 ```
 
@@ -76,21 +76,32 @@ You can use SSH keys to avoid typing in your password when working with git repo
 
 ## Copy files from another computer
 You can use the secure copy command, scp, to copy files between computers. If you already have SSH keys set up between the two computers, it won't ask you for a password. For example, the following command will copy the .bashrc file from roomba to this computer:
-```
+```bash
 scp husky@roomba:~/.bashrc .bashrc
 ```
 
 Similarly, you can copy a file from your computer to a remote computer. Also, you can copy entire directories using the -r option:
-```
+```bash
 scp -r ~/catkin_ws husky@c1.cs.washington.edu:~/catkin_ws
 ```
 
 ## Remote folder
 You can mount a folder from a remote machine to your own computer using sshfs:
-```
+```bash
 sudo apt-get install sshfs
 mkdir c1_catkin_ws
 ls c1_catkin_ws # It's empty
 sshfs husky@c1:/home/husky/catkin_ws c1_catkin_ws
 ls c1_catkin_ws # Stuff that was in catkin_ws on c1 is now on your computer too!
 ```
+
+## SSH agent
+You may notice that when you SSH into a machine, then you might have to type a password in to do operations that don't normally require a password from that machine. This is because there is a necessary program called ssh-agent which is started in most graphical sessions, but not when you log in remotely via SSH.
+
+You can solve this by manually starting ssh-agent:
+```bash
+ssh-agent bash
+ssh-add
+```
+
+After you type in your password, won't need to type in your password again as long as you are logged in.
