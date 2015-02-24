@@ -105,3 +105,22 @@ ssh-add
 ```
 
 After you type in your password, won't need to type in your password again as long as you are logged in.
+
+## SSH tunneling
+You can use SSH to "tunnel" from a port on your local computer to a port on a remote computer. This is useful for when you are working on a remote machine, and it launches something that runs on localhost.
+
+For example, let's say you are SSH'ed into a lab computer, walle, and you're working on a web server. When you run the web server to test it, it runs on localhost:8000. If you can't reach the site by going to walle.cs.washington.edu:8000 in your browser, then you can tunnel by opening an SSH connection like so:
+```bash
+ssh husky@walle.cs.washington.edu -L 2000:walle.cs.washington.edu:8000
+```
+
+Now you should be able to access your website by going to localhost:2000 on your computer, which is roughly equivalent to visiting localhost:8000 on walle.
+
+## X11 forwarding
+If you are using a Linux computer, you are most likely using the X11 Window System. If you SSH into another computer using X11, then you can actually run graphical applications on a remote machine, and see the GUI appear on your computer. For example, this can be used to run Matlab on a powerful remote machine, while forwarding the GUI to your laptop. This could also be useful for opening up GUI applications on robots which don't have displays (e.g., the PR2).
+
+To enable X11 forwarding, SSH with the `-X` option.:
+```bash
+ssh -X walle # Assumes walle is a Linux machine with X11.
+firefox # Opens Firefox on walle, but shows the GUI on your machine, assuming you are also on Linux.
+```
