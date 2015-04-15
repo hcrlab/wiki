@@ -8,6 +8,7 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Skeleton tracking](https://github.com/hcrlab/wiki/blob/master/skeleton_tracking.md)
 - [Webcam and AR markers](https://github.com/hcrlab/wiki/blob/master/webcam_and_ar_markers.md)
 - [Point cloud library: basic sample code](https://github.com/hcrlab/wiki/tree/master/pcl_sample)
+- [How to calibrate the Kinect](https://github.com/hcrlab/wiki/blob/master/kinect_calibration.md)
 
 ## Tutorials / presentations
 Presentations from HCR Lab on ROS or other software development topics.
