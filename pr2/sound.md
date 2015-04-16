@@ -1,4 +1,4 @@
-# Sound and TTS on the PR2.
+# Sound and TTS on the PR2
 
 ## Adjusting sound output
 Use `alsamixer` to adjust the sound output from the terminal.
