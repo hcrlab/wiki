@@ -13,3 +13,6 @@ festival> (SayText "I am about to plug myself in.")
 ```
 
 The names of the voices for sound_play's SoundClient are without the `voice_` prefix, e.g., `cmu_us_slt_arctic_hls`.
+
+## SoX
+`sox` is a useful command for doing all sorts of processing on audio files.
