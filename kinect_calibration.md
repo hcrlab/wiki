@@ -4,7 +4,7 @@
 Calibrate the intrinsics using this tutorial: [Intrinsic calibration](http://wiki.ros.org/openni_launch/Tutorials/IntrinsicCalibration). Save the files to `/etc/ros/camera_info`, and make sure the files are readable by all.
 
 Later, you can load the intrinsic calibration parameters by launching openni with:
-```
+```xml
 <include file="$(find openni_launch)/launch/openni.launch">
   <arg name="rgb_camera_info_url"   default="file:///etc/ros/camera_info/rgb_A00362A08919053A.yaml" />
   <arg name="depth_camera_info_url" default="file:///etc/ros/camera_info/depth_A00362A08919053A.yaml" />
@@ -54,6 +54,17 @@ rosbag play rgb.bag --clock /camera/rgb/camera_info:=/camera/rgb_bag/camera_info
 The calibration visualization should show random white noise for both images, but if everything's set up properly, the checkerboard should be detected in both images. You should see the grids overlaid over the white noise, and they should be in approximately the same place.
 
 The data is saved to the cache file referenced earlier in the ROS tutorial.
+
+### Get the calibration parameters
+The simplest way to read the message stored in the bag is to use the [Python Code API](http://wiki.ros.org/rosbag/Code%20API). The first camera_pose message should be close to the identity transformation. You can publish a static transform between `head_mount_kinect_rgb_optical_frame` and `head_mount_kinect_depth_optical_frame` using the second transformation:
+
+```xml
+<node pkg="tf" type="static_transform_publisher" name="$(arg camera)_extrinsic_calibration"
+    args="-0.058386075423 -0.0420297233163 -0.0047490001086
+      -0.0293246565925 0.0227688658924 -0.000634651560892 0.999310382453
+      $(arg tf_prefix)/$(arg camera)_rgb_optical_frame $(arg tf_prefix)/$(arg camera)_depth_optical_frame
+      100" />
+```
 
 ## PR2 calibration
 The [PR2 calibration](http://wiki.ros.org/pr2_calibration) tutorial works pretty well. The only thing is that you should run `/etc/ros/distro/openni_head.launch` to start the Kinect.
