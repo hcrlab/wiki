@@ -14,6 +14,10 @@ Later, you can load the intrinsic calibration parameters by launching openni wit
 ## Extrinsics
 Next, try following this tutorial: [Extrinsic calibration](http://wiki.ros.org/openni_launch/Tutorials/ExtrinsicCalibration). However, we need to make several changes.
 
+### Resources
+- [Arnaud Ramey](https://sites.google.com/site/rameyarnaud/research/ros/kinect-calibration)
+- [ROS tutorial](http://wiki.ros.org/openni_launch/Tutorials/ExtrinsicCalibration)
+
 ### Set up camera_pose_calibration
 A required package, [camera_pose_calibration](http://wiki.ros.org/camera_pose_calibration) doesn't exist in Hydro. Clone it and build it from [jbohren's fork](https://github.com/jbohren-forks/camera_pose/tree/hydro-devel). Also check if the [official repo](https://github.com/ros-perception/camera_pose) has a Hydro version.
 
