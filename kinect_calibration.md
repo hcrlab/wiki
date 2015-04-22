@@ -22,7 +22,7 @@ Next, try following this tutorial: [Extrinsic calibration](http://wiki.ros.org/o
 A required package, [camera_pose_calibration](http://wiki.ros.org/camera_pose_calibration) doesn't exist in Hydro. Clone it and build it from [jbohren's fork](https://github.com/jbohren-forks/camera_pose/tree/hydro-devel). Also check if the [official repo](https://github.com/ros-perception/camera_pose) has a Hydro version.
 
 ### Set up the augmented IR
-The calibration package tries to find the checkerboard in the IR image. You should cover the IR projector with scotch tape or a post-it note to diffuse the speckle pattern. However, this causes the image to be too dark to find a checkerboard in. The solution is to use the contrast package. Clone it, build it, and run:
+The calibration package tries to find the checkerboard in the IR image. You should cover the IR projector with scotch tape or a post-it note to diffuse the speckle pattern. However, this causes the image to be too dark to find a checkerboard in. The solution is to use the [contrast](https://github.com/hcrlab/contrast/tree/master) package. Clone it, build it, and run:
 
 ```
 rosrun contrast contrast_augmenter image:=/camera/ir/image_rect_ir
