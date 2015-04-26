@@ -19,6 +19,8 @@ Run the following scripts to install ROS.
 
 **install_turtlebot.sh**: Installs Turtlebot packages (for Hydro). See the [official instructions](http://wiki.ros.org/turtlebot/Tutorials/hydro/Installation) for more information.
 
+**install_hydro_all.sh**: Installs utils, ROS Hydro, and PR2 packages for Hydro.
+
 Installation should take about an hour.
 
 Example:
