@@ -21,6 +21,10 @@ Run the following scripts to install ROS.
 
 **install_hydro_all.sh**: Installs utils, ROS Hydro, and PR2 packages for Hydro.
 
+
+**install_groovy_all.sh**: Installs utils, ROS Hydro, and PR2 packages for Groovy.
+
+
 Installation should take about an hour.
 
 Example:
