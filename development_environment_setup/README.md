@@ -33,7 +33,12 @@ See the [SSH guide](https://github.com/hcrlab/wiki/blob/master/development_envir
 ## PR2
 If you are creating an account on the PR2, see the guide for [getting set up on the PR2](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/pr2.md).
 
-## Other resources
+## If you don't have Ubuntu
 [Running Gazebo on a remote machine](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/remote_gazebo.md). Gazebo running slowly on your laptop? See how to run Gazebo on a lab computer instead.
 
+[Running ROS in a virtual machine](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/virtual_machine.md). Specifically, setting up graphics so that rviz runs smoothly.
+
+## Coding tools
 [Automatic code formatting](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/auto_code_formatting.md). Automatically format your code to match style guides and to spend less time dealing with whitespace.
+
+[Vim tips](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/vim.md). Setting up vim for ROS development.
