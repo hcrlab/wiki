@@ -35,3 +35,5 @@ If you are creating an account on the PR2, see the guide for [getting set up on 
 
 ## Other resources
 [Running Gazebo on a remote machine](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/remote_gazebo.md). Gazebo running slowly on your laptop? See how to run Gazebo on a lab computer instead.
+
+[Automatic code formatting](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/auto_code_formatting.md). Automatically format your code to match style guides and to spend less time dealing with whitespace.
