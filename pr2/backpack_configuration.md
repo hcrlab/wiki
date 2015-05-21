@@ -29,3 +29,10 @@ Add c1 as 10.68.0.1:
 
 ## Verify
 You should be able to ssh from c1 to rosie-backpack and vice-versa.
+
+## ROS configuration
+On the laptop, these environment variables need to be set.
+```
+export ROS_MASTER_URI=http://c1:11311
+export ROS_HOSTNAME=hal9k
+```
