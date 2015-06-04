@@ -2,6 +2,7 @@
 This wiki contains public information for members of the Human-Centered Robotics Lab.
 
 ## Contents
+- [Getting started in the HCR lab](https://github.com/hcrlab/wiki/blob/master/getting_started_in_hcrlab.md)
 - [Development environment setup](https://github.com/hcrlab/wiki/tree/master/development_environment_setup)
 - [Voice recognition](https://github.com/hcrlab/wiki/tree/master/voice_recognition)
 - [Leg detector](https://github.com/hcrlab/wiki/blob/master/leg_detector.md)
