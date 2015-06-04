@@ -11,6 +11,7 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Point cloud library: basic sample code](https://github.com/hcrlab/wiki/tree/master/pcl_sample)
 - [Kinect resources](https://github.com/hcrlab/wiki/blob/master/kinect)
 - [PR2 resources](https://github.com/hcrlab/wiki/tree/master/pr2)
+- [Gazebo resources](https://github.com/hcrlab/wiki/tree/master/gazebo)
 
 ## Tutorials / presentations
 Presentations from HCR Lab on ROS or other software development topics.
