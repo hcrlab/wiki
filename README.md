@@ -1,17 +1,25 @@
 # Human-Centered Robotics Lab
 This wiki contains public information for members of the Human-Centered Robotics Lab.
 
-## Contents
+## Setup
 - [Getting started in the HCR lab](https://github.com/hcrlab/wiki/blob/master/getting_started_in_hcrlab.md)
 - [Development environment setup](https://github.com/hcrlab/wiki/tree/master/development_environment_setup)
+
+### Robots
+- [PR2 resources](https://github.com/hcrlab/wiki/tree/master/pr2)
+- [Turtlebot](https://github.com/hcrlab/wiki/tree/master/turtlebot)
+- [Kubi](https://github.com/hcrlab/wiki/tree/master/kubi)
+
+## Hardware / software resources
+- [Kinect resources](https://github.com/hcrlab/wiki/blob/master/kinect)
+- [Gazebo resources](https://github.com/hcrlab/wiki/tree/master/gazebo)
+
+### Applications
 - [Voice recognition](https://github.com/hcrlab/wiki/tree/master/voice_recognition)
 - [Leg detector](https://github.com/hcrlab/wiki/blob/master/leg_detector.md)
 - [Skeleton tracking](https://github.com/hcrlab/wiki/blob/master/skeleton_tracking.md)
 - [Webcam and AR markers](https://github.com/hcrlab/wiki/blob/master/webcam_and_ar_markers.md)
 - [Point cloud library: basic sample code](https://github.com/hcrlab/wiki/tree/master/pcl_sample)
-- [Kinect resources](https://github.com/hcrlab/wiki/blob/master/kinect)
-- [PR2 resources](https://github.com/hcrlab/wiki/tree/master/pr2)
-- [Gazebo resources](https://github.com/hcrlab/wiki/tree/master/gazebo)
 
 ## Tutorials / presentations
 Presentations from HCR Lab on ROS or other software development topics.
