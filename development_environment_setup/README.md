@@ -38,6 +38,8 @@ If you are creating an account on the PR2, see the guide for [getting set up on 
 
 [Running ROS in a virtual machine](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/virtual_machine.md). Specifically, setting up graphics so that rviz runs smoothly.
 
+[Setting up with a Mac](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/mac_setup.md). Note that using ROS on a Mac is still not well supported.
+
 ## Coding tools
 [Automatic code formatting](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/auto_code_formatting.md). Automatically format your code to match style guides and to spend less time dealing with whitespace.
 
