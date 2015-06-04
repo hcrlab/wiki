@@ -7,7 +7,7 @@ Information about using the PR2.
 - [Troubleshooting wireless problems](https://github.com/hcrlab/wiki/blob/master/pr2/wireless_problems.md)
 - [Using Hydro](https://github.com/hcrlab/wiki/blob/master/pr2/pr2_hydro.md)
 - [Sound](https://github.com/hcrlab/wiki/blob/master/pr2/sound.md)
-- [`robot` command](https://github.com/hcrlab/wiki/tree/master/pr2)
+- [`robot` command](https://github.com/hcrlab/wiki/tree/master/pr2/robot_command.md)
 - [Replacing the batteries](https://github.com/hcrlab/wiki/blob/master/pr2/replacing_batteries.md) (dangerous!)
 
 ## Reference
