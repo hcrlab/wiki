@@ -7,3 +7,6 @@ Information about using the PR2.
 - [Sound](https://github.com/hcrlab/wiki/blob/master/pr2/sound.md)
 - [robot command](https://github.com/hcrlab/wiki/tree/master/pr2)
 - [Backpack configuration / Using the PR2 outside the lab](https://github.com/hcrlab/wiki/blob/master/pr2/backpack_configuration.md)
+
+## Reference
+- [PR2 manual](https://pr2s.clearpathrobotics.com/wiki/PR2%20Manual)
