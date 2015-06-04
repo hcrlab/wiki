@@ -5,7 +5,7 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Getting started in the HCR lab](https://github.com/hcrlab/wiki/blob/master/getting_started_in_hcrlab.md)
 - [Development environment setup](https://github.com/hcrlab/wiki/tree/master/development_environment_setup)
 
-### Robots
+## Robots
 - [PR2 resources](https://github.com/hcrlab/wiki/tree/master/pr2)
 - [Turtlebot](https://github.com/hcrlab/wiki/tree/master/turtlebot)
 - [Kubi](https://github.com/hcrlab/wiki/tree/master/kubi)
@@ -14,7 +14,7 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Kinect resources](https://github.com/hcrlab/wiki/blob/master/kinect)
 - [Gazebo resources](https://github.com/hcrlab/wiki/tree/master/gazebo)
 
-### Applications
+## Applications
 - [Voice recognition](https://github.com/hcrlab/wiki/tree/master/voice_recognition)
 - [Leg detector](https://github.com/hcrlab/wiki/blob/master/leg_detector.md)
 - [Skeleton tracking](https://github.com/hcrlab/wiki/blob/master/skeleton_tracking.md)
