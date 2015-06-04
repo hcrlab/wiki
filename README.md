@@ -33,8 +33,8 @@ Presentations from HCR Lab on ROS or other software development topics.
 
 ## Courses
 Courses related to the HCR Lab.
-- [(Introduction to HCI, 2014)](https://courses.cs.washington.edu/courses/cse440/15wi/)
-- [(Robotics capstone, 2014)](https://sites.google.com/site/cse481au14/)
-- [(Human-Robot Interaction seminar, 2014)](https://sites.google.com/site/cse599k1/)
-- [(Robotics capstone, 2013)](https://sites.google.com/site/cse481a/) 
+- [Introduction to HCI, 2014](https://courses.cs.washington.edu/courses/cse440/15wi/)
+- [Robotics capstone, 2014](https://sites.google.com/site/cse481au14/)
+- [Human-Robot Interaction seminar, 2014](https://sites.google.com/site/cse599k1/)
+- [Robotics capstone, 2013](https://sites.google.com/site/cse481a/) 
 
