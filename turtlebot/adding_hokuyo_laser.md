@@ -3,7 +3,12 @@
 This mostly follows the standard ROS tutorial, [Adding a Hokuyo laser to your Turtlebot](http://wiki.ros.org/turtlebot/Tutorials/hydro/Adding%20a%20Hokuyo%20laser%20to%20your%20Turtlebot), but with more specific information.
 
 ## Adapter plate 
-On our robot, we don't use the 3D printed adapter plate. Instead, we opt to have the laser mounted lower on the robot with tape.
+On our robot, we don't use the 3D printed adapter plate. Instead, we opt to have the laser mounted lower on the robot with tape, as shown below:
+
+<img src="https://raw.githubusercontent.com/hcrlab/wiki/master/turtlebot/img/laser_mount_1.jpg" width="30%" height="30%" />
+<img src="https://raw.githubusercontent.com/hcrlab/wiki/master/turtlebot/img/laser_mount_2.jpg" width="30%" height="30%" />
+
+Try to line up the laser with the center hole, visible near the laser's location.
 
 ## Setup udev
 Follow the tutorial.
@@ -14,7 +19,7 @@ This part of the tutorial basically asks you to clone the Turtlebot repository a
 ## Edit your Turtlebot description
 Edit turtlebot_library.urdf.xacro with `sudo vim /opt/ros/hydro/share/turtlebot_description/urdf/turtlebot_library.urdf.xacro` or, if you did the previous step, `rosed turtlebot_description turtlebot_library.urdf.xacro`.
 
-If you add the laser using the adapter plate, then their description works. Otherwise, add the following right above the `</robot>` tag:
+If you add the laser using the adapter plate, then their description works. Otherwise, if you mounted the laser as shown in the pictures above, add the following right above the `</robot>` tag:
 ```xml
 <joint name="laser" type="fixed">
   <origin xyz="0.1425 0.00 0.145" rpy="0 0 0" />
