@@ -1,5 +1,8 @@
 # Vim tips
 
+## Syntax highlighting for roslaunch files
+Add this to your .vimrc: `au BufNewFile,BufRead *.launch set filetype=xml`
+
 ## Plugin manager
 Install [Vundle](https://github.com/gmarik/Vundle.vim), which can be used to easily install lots of plugins straight from Github. Once Vundle is installed, you just specify the name of the plugin in your .vimrc, then run `vim` and type `:PluginInstall`.
 
