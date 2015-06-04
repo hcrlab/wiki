@@ -4,6 +4,7 @@
 - [ ] Follow the [Development environment setup](https://github.com/hcrlab/wiki/tree/master/development_environment_setup)
 - [ ] Get on the HCR lab mailing list.
 - [ ] Get card key access to the lab (ask Maya).
+- [ ] If you're not already affiliated with UW, get a CSE NetID by filling out [this form](https://www.cs.washington.edu/lab/support/accountapp30.pdf) and submitting it to CSE support. You'll need a CSE NetID to access Gitlab and the building wifi.
 - [ ] Get on Github and join the [HCR lab organization](https://github.com/hcrlab) (ask Justin or Maya).
 - [ ] Get on [Trello](https://trello.com) and join the HCR lab organization (ask Justin or Maya).
 - [ ] Get on [Gitlab](https://gitlab.cs.washington.edu/). We don't use this yet, but we might in the future.
