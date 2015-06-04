@@ -42,3 +42,5 @@ If you are creating an account on the PR2, see the guide for [getting set up on 
 [Automatic code formatting](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/auto_code_formatting.md). Automatically format your code to match style guides and to spend less time dealing with whitespace.
 
 [Vim tips](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/vim.md). Setting up vim for ROS development.
+
+[QT creator](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/qt_creator.md). Setting up QT Creator as an IDE.
