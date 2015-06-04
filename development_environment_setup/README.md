@@ -44,3 +44,5 @@ If you are creating an account on the PR2, see the guide for [getting set up on 
 [Vim tips](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/vim.md). Setting up vim for ROS development.
 
 [QT creator](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/qt_creator.md). Setting up QT Creator as an IDE.
+
+[tmux](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/tmux.md). A terminal multiplexer that allows you to create multiple windows inside of a single SSH session. Also, if your SSH session dies, the tmux session will stay exactly the way it was, and you can "reattach" to it.
