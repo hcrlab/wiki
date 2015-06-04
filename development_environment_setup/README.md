@@ -51,3 +51,5 @@ If you are creating an account on the PR2, see the guide for [getting set up on 
 
 ## Other tips
 [Make your development environment pretty!](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/cosmetics.md)
+
+[Mike's dotfiles](https://github.com/mjyc/dotfiles). What are [dotfiles](http://dotfiles.github.io/)? In fact, it is shameless adaptation (copy) from [Paul Irish's](https://www.youtube.com/user/paulirish/videos) [dotfiles](https://github.com/paulirish/dotfiles).
