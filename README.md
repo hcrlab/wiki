@@ -30,3 +30,11 @@ Presentations from HCR Lab on ROS or other software development topics.
 - 2015-02-12 Tutorial Thursday: C++ crash course [(Slides)](https://docs.google.com/presentation/d/1CQDdcG0xpyvha5qR_SDElu8_lOC9F2URRX4PQ0hhYJg/edit?usp=sharing)
 [(Recording)](https://www.youtube.com/watch?v=k3yEUAOca9g&list=PLJNGprAk4DF5s27K5rqLKe2Z721HLADhl&index=3)
 - 2015-02-26 Tutorial Thursday: Git [(Slides)](https://docs.google.com/presentation/d/11z_sScRlFVTSX5wHhAuJy4rJuzPUAVG-oyEAZRCHdmQ/edit?usp=sharing) [(Recording)](https://www.youtube.com/watch?v=7YXsj7A9aYI&list=PLJNGprAk4DF5s27K5rqLKe2Z721HLADhl)
+
+## Courses
+Courses related to the HCR Lab.
+- [(Introduction to HCI, 2014)](https://courses.cs.washington.edu/courses/cse440/15wi/)
+- [(Robotics capstone, 2014)](https://sites.google.com/site/cse481au14/)
+- [(Human-Robot Interaction seminar, 2014)](https://sites.google.com/site/cse599k1/)
+- [(Robotics capstone, 2013)](https://sites.google.com/site/cse481a/)
+- 
