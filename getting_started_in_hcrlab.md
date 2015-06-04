@@ -28,3 +28,6 @@
 - [ ] Learn more about rospy through the [rospy overview](http://wiki.ros.org/rospy/Overview).
 - [ ] Reference guide for [roslaunch syntax](http://wiki.ros.org/roslaunch/XML).
 - [ ] Helpful site: [ROS answers](http://answers.ros.org/questions/).
+
+## Leaving the lab
+Delete someone's user account with `sudo userdel -r <uname>`.
