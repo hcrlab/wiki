@@ -6,7 +6,7 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Development environment setup](https://github.com/hcrlab/wiki/tree/master/development_environment_setup)
 
 ## Robots
-- [PR2 resources](https://github.com/hcrlab/wiki/tree/master/pr2)
+- [PR2](https://github.com/hcrlab/wiki/tree/master/pr2)
 - [Turtlebot](https://github.com/hcrlab/wiki/tree/master/turtlebot)
 - [Kubi](https://github.com/hcrlab/wiki/tree/master/kubi)
 
@@ -20,6 +20,9 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Skeleton tracking](https://github.com/hcrlab/wiki/blob/master/skeleton_tracking.md)
 - [Webcam and AR markers](https://github.com/hcrlab/wiki/blob/master/webcam_and_ar_markers.md)
 - [Point cloud library: basic sample code](https://github.com/hcrlab/wiki/tree/master/pcl_sample)
+
+## Academia
+- [Academic resources](https://github.com/hcrlab/wiki/tree/master/academia)
 
 ## Tutorials / presentations
 Presentations from HCR Lab on ROS or other software development topics.
