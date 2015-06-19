@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-all: output_basic.html output_ieee.html output_jcsl.html output_ieee.md output_ieee.txt output_ieee.pdf output_ieee_strict.md output_ieee_github.md output_ieee_strict_smart.md
+all: output_basic.html output_ieee.html output_jcsl.html output_ieee.md output_ieee.txt output_ieee.pdf output_ieee_strict.md output_ieee_github.md output_ieee_strict_smart.md output_ieee_strict_nocite.md
 
 clean:
 	rm output_*.*
@@ -16,6 +16,9 @@ output_ieee.md: test.tex research.bib ieee.csl
 
 output_ieee_strict.md: test.tex research.bib ieee.csl
 	pandoc test.tex --standalone -o output_ieee_strict.md -t markdown_strict --bibliography research.bib --csl ieee.csl
+
+output_ieee_strict_nocite.md: test_nocite.tex research.bib ieee.csl
+	pandoc test_nocite.tex --standalone -o output_ieee_strict_nocite.md -t markdown_strict --bibliography research.bib --csl ieee.csl
 
 output_ieee_github.md: test.tex research.bib ieee.csl
 	pandoc test.tex --standalone -o output_ieee_github.md -t markdown_github --bibliography research.bib --csl ieee.csl
