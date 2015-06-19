@@ -12,7 +12,7 @@ This directory includes a bunch of examples of output formats that Pandoc can pr
 [This](http://tex.stackexchange.com/questions/171793/bibtex-to-html-markdown-etc-using-pandoc) page provides a concise explanation of how to produce markdown from BibTex.
 
 We start with a BibTex file ([research.bib](research.bib)):
-```
+```bibtex
 @inproceedings{TBBRD13Synthesis,
   title={Device driver synthesis for embedded systems},
   author={Tanguy, Julien and Béchennec, Jean-Luc and Briday, Mikaël and Roux, Olivier H. and Dubé, Sébastien},
@@ -25,7 +25,7 @@ We start with a BibTex file ([research.bib](research.bib)):
 ```
 
 and a LaTeX file describing the document we want to produce ([test.tex](test.tex)):
-```
+```latex
 \documentclass{article}
 \usepackage{biblatex}
 \bibliography{mybib}
@@ -39,8 +39,18 @@ and a LaTeX file describing the document we want to produce ([test.tex](test.tex
 Optionally, we can also include a csl file (see [ieee.csl](ieee.csl)) to describe how the bibliography entries should be rendered.
 
 Finally we can run:
-```
+```bash
 pandoc test.tex --standalone -o output_ieee_strict.md -t markdown_strict --bibliography research.bib --csl ieee.csl
+```
+
+Which will produce the following markdown ([output_ieee_strict.md](output_ieee_strict.md)):
+```markdown
+\[[1](#ref-TBBRD13Synthesis)\]
+
+\[1\] J. Tanguy, J.-L. Béchennec, M. Briday, O. H. Roux, and S. Dubé,
+“Device driver synthesis for embedded systems,” in *Proceedings of 2013
+iEEE 18th international conference on emerging technologies & factory
+automation*, 2013.
 ```
 
 Take a look at [Makefile](Makefile) for more examples.
