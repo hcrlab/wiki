@@ -25,7 +25,7 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Academic resources](https://github.com/hcrlab/wiki/tree/master/academia)
 
 ## Writing
-- [Bibliography Creation with BibTex and Pandoc](https://github.com/hcrlab/wiki/tree/master/pandoc_examples)
+- [Bibliography Creation with BibTex and Pandoc](https://github.com/hcrlab/wiki/tree/master/pandoc_examples/README.md)
 
 ## Tutorials / presentations
 Presentations from HCR Lab on ROS or other software development topics.
