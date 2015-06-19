@@ -24,6 +24,9 @@ This wiki contains public information for members of the Human-Centered Robotics
 ## Academia
 - [Academic resources](https://github.com/hcrlab/wiki/tree/master/academia)
 
+## Writing
+- [Bibliography Creation with BibTex and Pandoc](https://github.com/hcrlab/wiki/tree/master/pandoc_examples)
+
 ## Tutorials / presentations
 Presentations from HCR Lab on ROS or other software development topics.
 - 2015-01-15 Tutorial Thursday: ROS basics [(Slides)](https://docs.google.com/presentation/d/1hS7V-AhcGPWQ4tYdOUyK7rdpmJ7G_RXvRi9No6tC1YM/edit?usp=sharing) [(Sample code)](https://github.com/hcrlab/randomwalker) [(Recording)](https://www.youtube.com/watch?v=MD255BS0YH4&list=PLJNGprAk4DF5s27K5rqLKe2Z721HLADhl&index=1)
