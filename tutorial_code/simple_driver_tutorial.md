@@ -63,7 +63,7 @@ if __name__ == '__main__':
     rospy.spin()
 ```
 - As a last step, make sure your node is executable: `chmod +x driver.py`.
-Full code for this tutorial can be found here. 
+Full code for this tutorial can be found [here](https://github.com/hcrlab/wiki/blob/master/tutorial_code/driver.py), no cheating though! 
 
 # Build Your Node
 Technically your node is in Python so nothing really needs to get built, but go to the root of your catkin workspace and catkin_make it anyway.
