@@ -1,6 +1,8 @@
 # PCL sample
 Sample usage of PCL with incoming PointCloud2 messages. This includes a node that computes the average point of a point cloud, and logs how long it took to process the message. There is also a Python version that does the same thing.
 
+For more advanced usage, see the resources at the bottom of this page.
+
 In this guide, we assume we are using a Turtlebot with a Kinect.
 
 ## Installation
@@ -98,3 +100,8 @@ This tells you that the coordinate frame for those messages is `/camera_rgb_opti
 ![The coordinate frame of the PointCloud2 data, which differs ROS coordinate conventions.](https://sites.google.com/site/cse481au14/labs/camera_rgb_optical_frame.png "The coordinate frame of the PointCloud2 data, which differs ROS coordinate conventions.")
 
 So, keep in mind that this node gives you data in a different coordinate frame from the standard ROS convention. In the future, we may want to adjust everything to use the same coordinate frame using [tf](http://wiki.ros.org/tf).
+
+## Resources
+
+[A nicely organized PCL tutorial](http://robotica.unileon.es/mediawiki/index.php/PCL/OpenNI_tutorial_2:_Cloud_processing_(basic)).
+
