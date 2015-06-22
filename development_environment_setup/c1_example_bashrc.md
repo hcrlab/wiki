@@ -130,6 +130,19 @@ alias t="tmux"
 alias trash="mv --backup=numbered --target-directory ~/.local/share/Trash/files/"
 alias trash_swp="trash ~/.vim/vimswap/*"
 
+#source ~/catkin_ws/devel/setup.bash
+#export ROS_PACKAGE_PATH=~/catkin_ws/:~/rosbuild_ws/:$ROS_PACKAGE_PATH
+#export ROS_ENV_LOADER=/etc/ros/groovy/env.sh
+#export PYTHONPATH=/home/sksellio/trajopt_ws/trajopt:/home/sksellio/trajopt_ws/build_trajopt/lib:$PYTHONPATH
+
+
+# UtilFuncs 
+#export UTILFUNCS_ROOT_DIR=/home/sksellio/util_packages/UtilFuncs
+
+# For orcdchomp_orig
+#export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+#alias ls="ls -lrth --color=auto"
+
 function cs () {
     cd $1
     ls
