@@ -4,7 +4,7 @@ The official [ROS guide to hydro migration](http://wiki.ros.org/hydro/Migration)
 
 The main things to consider are:
 
-- Package functionality have changed between Groovy and Hydro (i.e. functions that you used to call no longer exist, message definitions have changed).
+- Package functionality may have changed between Groovy and Hydro (i.e. functions that you used to call no longer exist, message definitions have changed).
 - Packages might not exist anymore.
 
 The first two cases have similar solutions. If package functionality is missing, try to check if that functionality has moved elsewhere. Or see if you can adapt your code to use the new functionality. A lot of times when things like message definitions change, it is easy to slightly adapt your code to use the new message definition.
