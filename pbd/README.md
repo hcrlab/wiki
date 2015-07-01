@@ -2,7 +2,7 @@
 
 ## How to run the demo
 
-This section describes how anyone at the HCR lab can run the RViz-based PbD system for a lab demo. It assumes that the computer used for the demo has already been configured properly (see below if you would like to set it up on a new computer or different account).
+This section describes how to run the RViz-based PbD system for a lab demo. It assumes that the computer used for the demo has already been configured properly (see below if you would like to set it up on a new computer or different account).
 
 **Summer 2015:** Please use Justin's desktop computer, with the 'hcrlab' account.
 
@@ -32,8 +32,6 @@ Simple actions (no objects or dummy objects):
 Complex actions (with objects):
 * ...
 * 
-
-
 
 
 ### Troubleshooting
