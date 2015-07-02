@@ -109,7 +109,9 @@ T2: roslaunch pa_perception extrinsic_calibration.launch  # or the name of the l
 ```
 T3: rosparam set /use_sim_time false  # this line intentionally repeated
 T3: rosbag record --limit=300 -O rgb.bag /camera/rgb/image_rect_mono /camera/rgb/camera_info
-T3: # using a python rosbag-reading script, make sure there are both `camera_info` and `image_rect_mono` messages
+T3: ^C  # after waiting 10 seconds
+T3: rosbag info rgb.bag
+- make sure there are both `camera_info` and `image_rect_mono` messages
 ```
 
 #### Restart the kinect and initialize it with sim time
