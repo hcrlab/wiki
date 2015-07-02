@@ -10,5 +10,5 @@ Find your kinect's serial number printed on the bottom of the kinect. Or, launch
   * Replace the intrinsics URLs with the actual path of your intrinsics files.
 
 ### Steps
-* To calibrate a new kinect, follow [these steps](https://github.com/hcrlab/wiki/blob/master/kinect/calibration/README.md)
+* To calibrate a new kinect, follow [these steps](https://github.com/hcrlab/wiki/blob/master/kinect/calibration/how_to_calibrate.md)
 * Check in the resulting files to this repo
