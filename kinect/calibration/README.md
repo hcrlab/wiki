@@ -8,5 +8,9 @@ Find your kinect's serial number printed on the bottom of the kinect. Or, launch
   2. Place them in your repo and include their path in your launch file (as in `kinect_node.launch`)
 
 * Extrinsic parameters should go in a launch file. To run in a calibrated mode, the kinect driver must always be launched with the launch file containing extrinsic parameters.
-* You will need to edit the launch file to use it. Replace the intrinsics URLs with the actual path of your intrinsics files, or if using option 1 for intrinsics, delete the intrinsics URL arg nodes.
+* Copy `kinect_node_[serial].launch` for your kinect
+  * Replace the intrinsics URLs with the actual path of your intrinsics files, or if using option 1 for intrinsics, delete the intrinsics URL arg nodes.
 
+### Steps
+* To calibrate a new kinect, follow [these steps](https://github.com/hcrlab/wiki/blob/master/kinect/calibration/README.md)
+* Check in the resulting files to this repo
