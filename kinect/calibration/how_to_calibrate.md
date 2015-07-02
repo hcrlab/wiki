@@ -90,40 +90,42 @@ This is a recap of all the commands to run for the extrinsic calibration, assumi
 
 #### Setup
 ```
-    T1: roscore
-    T5: rosrun contrast contrast_augmenter image:=/camera/ir/image_rect_ir
+T1: roscore
+T5: rosrun contrast contrast_augmenter image:=/camera/ir/image_rect_ir
 ```
 
 #### Run the kinect, and verify that it's running
 ```
-    T3: rosparam set /use_sim_time false
-    T2: roslaunch pa_perception extrinsic_calibration.launch
-    - check image feed in rviz: /camera/ir/image_raw
-    - check image feed in rviz: /camera/ir_augmented/image_raw
-    - check image feed in rviz: /camera/rgb/image_color
-    - check image feed in rviz: /camera/rgb/image_rect_mono
-    - turn off image feed in rviz
+T3: rosparam set /use_sim_time false
+T2: roslaunch pa_perception extrinsic_calibration.launch  # or the name of the launch file you created earlier
+- check image feed in rviz: /camera/ir/image_raw
+- check image feed in rviz: /camera/ir_augmented/image_raw
+- check image feed in rviz: /camera/rgb/image_color
+- check image feed in rviz: /camera/rgb/image_rect_mono
+- turn off image feed in rviz
 ```
 
 #### Record RGB bag
 ```
-    T3: rosparam set /use_sim_time false
-    T3: rosbag record --limit=300 -O rgb.bag /camera/rgb/image_rect_mono /camera/rgb/camera_info
-    T3: # using a python rosbag-reading script, make sure there are both `camera_info` and `image_rect_mono` messages
+T3: rosparam set /use_sim_time false  # this line intentionally repeated
+T3: rosbag record --limit=300 -O rgb.bag /camera/rgb/image_rect_mono /camera/rgb/camera_info
+T3: ^C  # after waiting 10 seconds
+T3: rosbag info rgb.bag
+- make sure there are both `camera_info` and `image_rect_mono` messages
 ```
 
 #### Restart the kinect and initialize it with sim time
 ```
-    T3: rosparam set /use_sim_time true
-    T2: ^C
-    T2: roslaunch pa_perception extrinsic_calibration.launch
-    T3: rosbag play rgb.bag --clock  # don't skip this step
+T3: rosparam set /use_sim_time true
+T2: ^C
+T2: roslaunch pa_perception extrinsic_calibration.launch  # or the name of the launch file you created earlier
+T3: rosbag play rgb.bag --clock  # don't skip this step
 ```
 
 #### Calibrate using live IR and recorded RGB
 ```
-    T4: roslaunch camera_pose_calibration calibrate_2_camera.launch camera1_ns:=/camera/rgb_bag camera2_ns:=/camera/ir_augmented camera2_image:=image_raw checker_rows:=5 checker_cols:=4 checker_size:=0.0245
-    T3: rosbag play rgb.bag --clock /camera/rgb/camera_info:=/camera/rgb_bag/camera_info /camera/rgb/image_rect_mono:=/camera/rgb_bag/image_rect
+T4: roslaunch camera_pose_calibration calibrate_2_camera.launch camera1_ns:=/camera/rgb_bag camera2_ns:=/camera/ir_augmented camera2_image:=image_raw checker_rows:=5 checker_cols:=4 checker_size:=0.0245
+T3: rosbag play rgb.bag --clock /camera/rgb/camera_info:=/camera/rgb_bag/camera_info /camera/rgb/image_rect_mono:=/camera/rgb_bag/image_rect
 ```
 
 ## PR2 calibration

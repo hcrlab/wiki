@@ -10,5 +10,3 @@ Find your kinect's serial number printed on the bottom of the kinect. Or, launch
 * Extrinsic parameters should go in a launch file. To run in a calibrated mode, the kinect driver must always be launched with the launch file containing extrinsic parameters.
 * You will need to edit the launch file to use it. Replace the intrinsics URLs with the actual path of your intrinsics files, or if using option 1 for intrinsics, delete the intrinsics URL arg nodes.
 
-### Steps
-* [Calibration steps](https://github.com/hcrlab/wiki/blob/master/kinect/calibration/how_to_calibrate.md)
