@@ -97,7 +97,7 @@ T5: rosrun contrast contrast_augmenter image:=/camera/ir/image_rect_ir
 #### Run the kinect, and verify that it's running
 ```
 T3: rosparam set /use_sim_time false
-T2: roslaunch pa_perception extrinsic_calibration.launch
+T2: roslaunch pa_perception extrinsic_calibration.launch  # or the name of the launch file you created earlier
 - check image feed in rviz: /camera/ir/image_raw
 - check image feed in rviz: /camera/ir_augmented/image_raw
 - check image feed in rviz: /camera/rgb/image_color
@@ -116,7 +116,7 @@ T3: # using a python rosbag-reading script, make sure there are both `camera_inf
 ```
 T3: rosparam set /use_sim_time true
 T2: ^C
-T2: roslaunch pa_perception extrinsic_calibration.launch
+T2: roslaunch pa_perception extrinsic_calibration.launch  # or the name of the launch file you created earlier
 T3: rosbag play rgb.bag --clock  # don't skip this step
 ```
 
