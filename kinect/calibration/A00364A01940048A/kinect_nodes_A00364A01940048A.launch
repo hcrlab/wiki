@@ -25,7 +25,6 @@
     <arg name="publish_tf" value="false" />
 
     <arg name="camera" value="$(arg kinect_name)" />
-    <arg name="depth_registration" value="false" />
   </include>
 
   <!-- Replace the suppressed transforms with our own static transforms -->
