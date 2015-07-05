@@ -37,6 +37,8 @@ roslaunch pr2_pbd_interaction pbd_frontend.launch
 
 #### Programming the robot
 
+List of commands available [here](commands.pdf) as a PDF (printed copy will be available at the lab).
+
 **Basic commands:** You can demonstrate different arm stiffnesses, moving the arms around, and changing the hand states with the following commands:
 ```
 OPEN/CLOSE RIGHT/LEFT HAND
