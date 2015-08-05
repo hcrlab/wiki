@@ -9,6 +9,8 @@ Information about using the PR2.
 - [Sound](https://github.com/hcrlab/wiki/blob/master/pr2/sound.md)
 - [`robot` command](https://github.com/hcrlab/wiki/tree/master/pr2/robot_command.md)
 - [Replacing the batteries](https://github.com/hcrlab/wiki/blob/master/pr2/replacing_batteries.md) (dangerous!)
+- [Accessing physical servers](https://github.com/hcrlab/wiki/blob/master/pr2/accessing_servers.md) (dangerous!)
 
 ## Reference
 - [PR2 manual](https://pr2s.clearpathrobotics.com/wiki/PR2%20Manual)
+- [PR2 service information](https://pr2s.clearpathrobotics.com/wiki/PR2%20Service%20Information)
