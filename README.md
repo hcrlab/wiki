@@ -20,6 +20,7 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Skeleton tracking](https://github.com/hcrlab/wiki/blob/master/skeleton_tracking.md)
 - [Webcam and AR markers](https://github.com/hcrlab/wiki/blob/master/webcam_and_ar_markers.md)
 - [Point cloud library: basic sample code](https://github.com/hcrlab/wiki/tree/master/pcl_sample)
+- [Tabletop scene interpretation](https://gitlab.cs.washington.edu/lrperlmu/pcl_utils/tree/leah-dev)
 
 ## Academia
 - [Academic resources](https://github.com/hcrlab/wiki/tree/master/academia)
