@@ -37,6 +37,8 @@ Presentations from HCR Lab on ROS or other software development topics.
 - 2015-02-12 Tutorial Thursday: C++ crash course [(Slides)](https://docs.google.com/presentation/d/1CQDdcG0xpyvha5qR_SDElu8_lOC9F2URRX4PQ0hhYJg/edit?usp=sharing)
 [(Recording)](https://www.youtube.com/watch?v=k3yEUAOca9g&list=PLJNGprAk4DF5s27K5rqLKe2Z721HLADhl&index=3)
 - 2015-02-26 Tutorial Thursday: Git [(Slides)](https://docs.google.com/presentation/d/11z_sScRlFVTSX5wHhAuJy4rJuzPUAVG-oyEAZRCHdmQ/edit?usp=sharing) [(Recording)](https://www.youtube.com/watch?v=7YXsj7A9aYI&list=PLJNGprAk4DF5s27K5rqLKe2Z721HLADhl)
+- 2015-10-29 Tutorial Thursday: Manipulation in simulation [(Slides)](https://docs.google.com/presentation/d/1KbO1IPNeTOQejhEP_L59fps2ziYUzbO98_wmEkf_KwA/edit?pli=1) [(Recording)](https://www.youtube.com/watch?v=rqWhyHgCFS4)
+- 2015-11-05 Tutorial Thursday: Viewpoint estimation [(Slides)](https://docs.google.com/presentation/d/1CE9zs-O-mEK-Y7fYxUFrlBo0-Y_CDZjyjeRgmaniVmQ/edit#slide=id.p)
 
 ## Courses
 Courses related to the HCR Lab.
