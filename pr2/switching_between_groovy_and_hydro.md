@@ -40,7 +40,7 @@ In this case, the command above is equivalent to
 ```
 since we just created a simlink in the filesystem linking `/etc/ros/distro/` to `/etc/ros/groovy/`.
 
-### Side note for desktops running ros
+### Side Note (relevant to desktops running ROS)
 The directory `/etc/ros/groovy` is a separate thing from `/opt/ros/groovy`. The `robot` command and the directory `/etc/ros/groovy` only exist on the robot. If you have multiple ROS distributions installed on your desktop, you can switch to groovy using `source /opt/ros/groovy/setup.bash` instead of the commands above.
 
 
