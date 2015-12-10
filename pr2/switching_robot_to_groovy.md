@@ -1,4 +1,4 @@
-## Switching Between Groovy And Hydro
+## Switching the Robot to Groovy
 This wiki describes how to switch between ROS distributions, including some of
 what happens under the hood. 
 
@@ -41,7 +41,7 @@ In this case, the command above is equivalent to
 since we just created a simlink in the filesystem linking `/etc/ros/distro/` to `/etc/ros/groovy/`.
 
 ### Side Note (relevant to desktops running ROS)
-The directory `/etc/ros/groovy` is a separate thing from `/opt/ros/groovy`. The `robot` command and the directory `/etc/ros/groovy` only exist on the robot. If you have multiple ROS distributions installed on your desktop, you can switch to groovy using `source /opt/ros/groovy/setup.bash` instead of the commands above.
+The directory `/etc/ros/groovy` is a separate thing from `/opt/ros/groovy`. The `robot` command and the directory `/etc/ros/groovy` only exist on the robot. If you have multiple ROS distributions installed on your desktop, you can switch to groovy using `source /opt/ros/groovy/setup.bash` instead of the commands above (depending on your `.bashrc` file, you may use the `setrobot groovy' command instead).
 
 
 ### Start the robot
@@ -64,8 +64,11 @@ plan to use packages from the workspace:
 > export ROS_PACKAGE_PATH=~/my_groovy_workspace/:$ROS_PACKAGE_PATH
 ```
 This command concatenates your workspace to `ROS_PACKAGE_PATH`. If your workspace is built with catkin 
-(as are most hydro workspaces), there is a shortcut to do this (`source ~/my_hydro_workspace/devel/setup.bash`). 
+(as are most hydro workspaces), there is a shortcut to do this (`source ~/my_groovy_workspace/devel/setup.bash`). 
 If your workspace is built with rosbuild, you must do it manually.
+
+### Debugging: 
+Depending on your `.bashrc`, some of the commands here, especially the ones meant to modify your `ROS_PACKAGE_PATH` (like `source /etc/ros/distro/setup.bash` and `export ROS_PACKAGE_PATH=~/my_groovy_workspace/:$ROS_PACKAGE_PATH`) will not be necessary. If the behavior is different than expected, check your `.bashrc` and try echoing your `ROS_PACKAGE_PATH` after every step to make sure it's what you expect. 
 
 ### Run your stuff!
 Now you can run your code.
