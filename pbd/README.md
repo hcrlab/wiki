@@ -6,6 +6,9 @@ This section describes how to run the RViz-based PbD system for a lab demo. It a
 
 **Summer 2015:** Please use Justin's desktop computer, with the 'hcrlab' account.
 
+#### Making sure you're on groovy
+As of 12/2015, pbd only works under groovy. Use this [tutorial](https://github.com/hcrlab/wiki/blob/master/pr2/switching_between_groovy_and_hydro.md) to understand how to switch between groovy and hydro.
+
 #### Starting the demo
 
 * Log in to the hcrlab account.
