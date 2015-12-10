@@ -69,7 +69,7 @@ function getdeps() {
 # Runs setup commands for ROS stuff.
 function setros() {
   source /opt/ros/$1/setup.bash
-  source ~/catkin_ws_$1/devel/setup.bash
+  source ~/catkin_ws_$1/devel/setup.bash --extend
 }
 ```
 
