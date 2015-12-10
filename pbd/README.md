@@ -4,10 +4,10 @@
 
 This section describes how to run the RViz-based PbD system for a lab demo. It assumes that the computer used for the demo has already been configured properly (see below if you would like to set it up on a new computer or different account).
 
-**Summer 2015:** Please use Justin's desktop computer, with the 'hcrlab' account.
+**Summer 2015:** Please use Justin's desktop computer (walle), with the 'hcrlab' account.
 
 #### Making sure you're on groovy
-As of 12/2015, pbd only works under groovy. Use this [tutorial](https://github.com/hcrlab/wiki/blob/master/pr2/switching_between_groovy_and_hydro.md) to understand how to switch between groovy and hydro.
+As of 12/2015, pbd only works under groovy. Use this [tutorial](https://github.com/hcrlab/wiki/blob/master/pr2/switching_robot_to_groovy.md) to understand how to switch to groovy from hydro.
 
 #### Starting the demo
 
