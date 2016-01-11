@@ -2,6 +2,9 @@
 This wiki describes how to switch between ROS distributions, including some of
 what happens under the hood. 
 
+In the interest of giving a concrete example, I'm going to describe how to switch to groovy.
+If you want to switch to hydro, substitute "hydro" for "groovy" in all the commands below.
+
 ## TLDR;
 ```
 > ssh c1
@@ -20,8 +23,7 @@ You will need to ssh onto the robot and claim it before you can continue.
 ```
 
 ## Setting the ROS environment to groovy (Before robot start)
-In the interest of giving a concrete example, I'm going to describe how to switch to groovy.
-If you want to switch to hydro, substitute "hydro" for "groovy" in all the commands below.
+
 ```
 > robot groovy
 ```
