@@ -42,6 +42,8 @@ In this case, the command above is equivalent to
 ```
 since we just created a simlink in the filesystem linking `/etc/ros/distro/` to `/etc/ros/groovy/`.
 
+*Warning: If there is a mismatch between the simlink state and which distro is sourced, then* `robot start` *will not work!*
+
 ### Side Note (relevant to desktops running ROS)
 The directory `/etc/ros/groovy` is a separate thing from `/opt/ros/groovy`. The `robot` command and the directory `/etc/ros/groovy` only exist on the robot. If you have multiple ROS distributions installed on your desktop, you can switch to groovy using `source /opt/ros/groovy/setup.bash` instead of the commands above (depending on your `.bashrc` file, you may use the `setros groovy' command instead, see [Recommended .bashrc](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/recommended_bashrc.md)).
 
