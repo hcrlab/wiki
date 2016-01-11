@@ -11,6 +11,7 @@ Information about using the PR2.
 - [Replacing the batteries](https://github.com/hcrlab/wiki/blob/master/pr2/replacing_batteries.md) (dangerous!)
 - [Accessing physical servers](https://github.com/hcrlab/wiki/blob/master/pr2/accessing_servers.md) (dangerous!)
 - [Switching between groovy and hydro](https://github.com/hcrlab/wiki/blob/master/pr2/switching_robot_to_groovy.md)
+- [Troubleshooting](https://github.com/hcrlab/wiki/blob/master/pr2/troubleshooting.md)
 
 ## Reference
 - [PR2 manual](https://pr2s.clearpathrobotics.com/wiki/PR2%20Manual)
