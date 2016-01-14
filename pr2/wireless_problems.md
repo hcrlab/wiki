@@ -12,7 +12,8 @@ You can test if the robot has wireless internet by unplugging it, and routing a 
 ## Factory reset of the router
 If you're not sure why the wireless router can't connect to the internet, you might just want to do a factory reset of the router. At that point, the router will show up as dd-wrt. You should connect to it and find the configuration page at 192.168.1.1. The username is root, and the password is admin. Perform the following steps:
 - Under Setup->Basic setup->Network setup->Router IP, set the Local IP Address to 10.68.0.5
-- Under Setup->Basic setup->Wireless Setup->WAN Connection Type, disable DHCP
+- Under Setup->Basic setup->Wireless Setup->WAN Connection Type, make sure the Connection Type is Automatic Configuration - DHCP
+- Under Setup->Basic setup->Network Address Server Settings (DHCP), set DHCP Server to Disable
 - Under Wireless, disable one of the wireless physical interfaces, say wl0.
 - For the other interface (wl1), set the wireless mode to Client and the network name to CSE-Local.
 
