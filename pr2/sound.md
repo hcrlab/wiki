@@ -3,6 +3,12 @@
 ## Adjusting sound output
 Use `alsamixer` to adjust the sound output from the terminal.
 
+## Troubleshooting
+The robot's sound output can sometimes be glitchy.
+This often occurs as a result of launching sound_play multiple times.
+Note that on the PR2, sound_play is launched by default, so no package should ever launch sound_play itself, even under a different name.
+So far, the only solution is the restart the robot.
+
 ## Festival
 You can experiment with new voices using festival directly:
 ```
