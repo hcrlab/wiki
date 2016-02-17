@@ -87,7 +87,8 @@ class MyNodeTest : public ::testing::Test {
         subscriber_(
             node_handle_.subscribe("/output_topic", 5,
                                    &MyNodeTest::Callback,
-                                   this)) {
+                                   this)),
+        message_received_(false) {
   }
 
   /*
@@ -115,17 +116,27 @@ class MyNodeTest : public ::testing::Test {
     return ros::topic::waitForMessage<MyOutputMessage>(
         subscriber_.getTopic(), ros::Duration(1));
   }
+  
+  // An alternative way of waiting for a message.
+  // ros::topic::waitForMessage can sometimes be flaky.
+  void WaitForMessageAlternate() {
+    while(!message_received_) {
+      ros::spinOnce();
+    }
+  }
 
  private:
   ros::NodeHandle node_handle_;
   ros::Publisher publisher_;
   ros::Subscriber subscriber_;
+  bool message_received_;
 
   /*
    * This callback is a no-op because we get the messages from the
    * node under test using WaitForMessage().
    */
   void Callback(const MyOutputMessage& event) {
+    message_received_ = true;
   }
 
   /*
@@ -139,14 +150,14 @@ class MyNodeTest : public ::testing::Test {
 
 TEST_F(MyNodeTest, NonZeroInputDoesSomething) {
   Publish(1);
-  auto output = WaitForEvent();
+  auto output = WaitForMessage();
   ASSERT_TRUE(output != NULL);
   EXPECT_EQ(10, output->some_output);
 }
 
 TEST_F(MyNodeTest, ZeroInputDoesNothing) {
   Publish(0);
-  auto output = WaitForEvent();
+  auto output = WaitForMessage();
   ASSERT_TRUE(output == NULL);
 }
 }
@@ -161,6 +172,18 @@ int main(int argc, char **argv) {
   spinner.stop();
   ros::shutdown();
   return ret;
+}
+```
+
+#### Alternative way of waiting for a message to be sent
+`waitForMessage` may be flaky (i.e., your test will work some times but not others).
+An alternative way of waiting for a message to be sent is to have the subscriber callback set a boolean value in your test fixture.
+Make sure that that boolean is reset to false when needed.
+Then, you can wait for a message like so:
+
+```cpp
+while (!message_received_) {
+  ros::spinOnce();
 }
 ```
 
@@ -201,6 +224,30 @@ or
 ```bash
 rostest mypackage my_node_test.test
 ```
+
+### Mocking with gmock
+The [gmock](https://github.com/google/googletest/blob/master/googlemock/README.md) library is useful because it can create mock objects for you.
+However, gmock is not well-integrated into catkin as well as gtest is.
+To use gmock, first add it to your package.xml.
+This causes rosdep to install gmock from the Ubuntu repositories:
+```xml
+<test_depend>google-mock</test_depend>
+<test_depend>gtest</test_depend>
+```
+
+Next, add the gmock headers and libraries to your CMakeLists.txt:
+```cmake
+set(gmock_INCLUDE_DIR /usr/include/gmock)
+set(gmock_LIB_DIR /usr/lib)
+```
+
+Add gmock to `target_link_libraries` for your tests:
+```cmake
+target_link_libraries(mytest gmock ${catkin_LIBRARIES})
+```
+
+Your project should now be configured to use gmock.
+Read the gmock documentation to learn how to use it in your tests.
 
 ## Python info
 Testing Python should be similar, it just uses a different framework. See the resources at the top for more info. Then add details here!
