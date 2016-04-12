@@ -22,6 +22,7 @@
 - [ ] Learn about [rviz](http://wiki.ros.org/rviz) and do [tutorials](http://wiki.ros.org/rviz/Tutorials) 1-5.
 - [ ] Learn about [launch files](http://wiki.ros.org/roslaunch).
 - [ ] Learn about [unit testing](http://wiki.ros.org/UnitTesting) with ROS.
+- [ ] Learn about [Robot Web Tools](http://robotwebtools.org/).
 
 ## ROS resources
 - [ ] Watch [Tutorial Thursday](https://github.com/hcrlab/wiki#tutorials--presentations) presentations.
