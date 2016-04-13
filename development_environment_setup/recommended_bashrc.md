@@ -17,9 +17,9 @@ export ROS_MASTER_URI=http://localhost:11311 # The location of the ROS master.
 export ROBOT=sim # The type of robot.
 
 # Get IP address on ethernet
-# If you're on a laptop, change eth0 to wlan0
+# If you're on a desktop, change wlan0 to eth0
 function my_ip() {
-    MY_IP=$(/sbin/ifconfig eth0 | awk '/inet/ { print $2 } ' | sed -e s/addr://)
+    MY_IP=$(/sbin/ifconfig wlan0 | awk '/inet/ { print $2 } ' | sed -e s/addr://)
     echo ${MY_IP:-"Not connected"}
 }
 
