@@ -7,6 +7,7 @@ There are a few things to customize:
 - `source ~/catkin_ws/devel/setup.bash`: Point this to the correct path for your catkin workspace.
 - `MY_IP=$(/sbin/ifconfig eth0 ...`: `eth0` is the name of the network device. If you are on a laptop, you most likely will need to change `eth0` to `wlan0`. You can check the list of network devices by typing `ifconfig`.
 - The terminal prompt `PS1` can be customized. As given, it will turn your terminal prompt purple, and show the current hostname, the current path, and the current ROS Master host.
+- The ROS
 
 ```bash
 source /opt/ros/hydro/setup.bash # Default to hydro. Change this to default to another distro if you want.
@@ -15,6 +16,7 @@ export ROS_HOSTNAME=localhost # Optional, the name of this computer.
 export ROS_MASTER_HOST=localhost # Used to inform us what robot we're connected to.
 export ROS_MASTER_URI=http://localhost:11311 # The location of the ROS master.
 export ROBOT=sim # The type of robot.
+export ROSCONSOLE_FORMAT='${node} ${function}:${line}: ${message}' # Formats log messages, see http://wiki.ros.org/rosconsole#Console_Output_Formatting
 
 # Get IP address on ethernet
 # If you're on a desktop, change wlan0 to eth0
