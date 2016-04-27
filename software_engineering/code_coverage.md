@@ -60,7 +60,7 @@ Coveralls offers a few nice features:
 - Auto-updating badge showing code coverage, which you can add to your README.md
   - Unfortunately, it seems like the badge only updates when you push to a repository, and not when you merge a pull request.
 
-If you have [Travis set up for continuous integration](software_engineering/continuous_integration.md), then you can automatically upload coverage information to Coveralls for every push and pull request.
+If you have [Travis set up for continuous integration](continuous_integration.md), then you can automatically upload coverage information to Coveralls for every push and pull request.
 First, add this to the install script in .travis.yml: `gem install coveralls-lcov`.
 Then, after extracting and filtering your `coverage.info`, simply run `coveralls-lcov coverage.info`
 
