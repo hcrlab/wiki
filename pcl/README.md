@@ -5,8 +5,8 @@
 - [Official PCL tutorials](http://pointclouds.org/documentation/tutorials/)
 
 **HCR Lab resources**
-- [PCL C++ tips](pcl/pcl_cpp_tips.md)
-- [PCL sample code](pcl_sample)
+- [PCL C++ tips](pcl_cpp_tips.md)
+- [PCL sample code](/pcl_sample)
 
 **Other resources**
 - [A nicely organized PCL tutorial](http://robotica.unileon.es/mediawiki/index.php/PCL/OpenNI_tutorial_2:_Cloud_processing_(basic))
