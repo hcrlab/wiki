@@ -5,8 +5,9 @@ Continuous integration makes it possible to build your repository and run tests 
 
 Examples of things you might want to run automatically:
 - Build: hopefully your code compiles before you push it! However, sometimes catkin works for one person but not others, usually because of missing dependencies in CMakeLists.txt.
-- Test: run unit tests automatically and find out exactly which commit broke the tests.
+- Test: run [unit tests](unit_testing.md) automatically and find out exactly which commit broke the tests.
 - Lint: run a linter or some kind of static analysis.
+- Compute [code coverage](code_coverage.md): find out which lines of code were used by your tests, and which weren't.
 - Generate documentation: run Sphinx or whatever other documentation generator you're using.
 - Deploy: deploy generated documentation to a website, or deploy built Debians.
 
@@ -77,5 +78,9 @@ script:
     - rostest YOUR_REPO test.launch # Run tests using rostest
     - pep8 src/*.py test/*.py # Linter
 ```
+
+Examples:
+- [jstnhuang/rapid](https://github.com/jstnhuang/rapid/blob/master/.travis.yml)
+- [PR2/pr2_pbd](https://github.com/PR2/pr2_pbd/blob/groovy-devel/.travis.yml)
 
 See the [Travis docs](http://docs.travis-ci.com/) for more information.
