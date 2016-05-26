@@ -5,6 +5,7 @@
 - [How to create reusable Python modules](https://github.com/hcrlab/wiki/blob/master/software_engineering/python_modules.md)
 - [Continuous integration with ROS](https://github.com/hcrlab/wiki/blob/master/software_engineering/continuous_integration.md)
 - [Code coverage](code_coverage.md)
+- [Managing lots of repositories with wstool](managing_workspace.md)
 - [Migrating from Groovy to Hydro](https://github.com/hcrlab/wiki/blob/master/software_engineering/hydro_migration.md)
 
 ## ROS resources
