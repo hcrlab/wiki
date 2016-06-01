@@ -1,4 +1,5 @@
 # Academic resources
 
-- [How to print a poster](https://github.com/hcrlab/wiki/blob/master/academia/posters.md)
-- [Data analysis tools](https://github.com/hcrlab/wiki/blob/master/academia/data_tools.md)
+- [Paper writing tips](papers.md)
+- [How to print a poster](posters.md)
+- [Data analysis tools](data_tools.md)
