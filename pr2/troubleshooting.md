@@ -1,3 +1,8 @@
+# Troubleshooting
+
+- [Clearpath FAQ on common issues](https://pr2s.clearpathrobotics.com/wiki/FAQ)
+- [Troubleshooting wireless problems](wireless_problems.md)
+
 ### No data from runstop
 Sometimes the robot will report no data from the runstop.
 I.e., even with the runstop on, the robot will not report that it's on.
