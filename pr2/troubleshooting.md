@@ -1,3 +1,11 @@
+### No data from runstop
+Sometimes the robot will report no data from the runstop.
+I.e., even with the runstop on, the robot will not report that it's on.
+In `rqt_pr2_dashboard`, it will report "stale data."
+The dashboard might also report issues with the power board.
+After checking, run `robot stop -f` and then run `sudo pr2-systemcheck` and see if it reports an error with the power board.
+If so, the only solution we've seen so far is the power-cycle the robot.
+
 ### The robot won't move
 * Is it runstopped?
 * If using `rosrun` or `roslaunch` from your desktop, make sure you have first run `setrobot c1` so you're talking to roscore on the robot.
