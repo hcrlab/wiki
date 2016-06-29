@@ -6,6 +6,7 @@
 - [Continuous integration with ROS](https://github.com/hcrlab/wiki/blob/master/software_engineering/continuous_integration.md)
 - [Code coverage](code_coverage.md)
 - [Managing lots of repositories with wstool](managing_workspace.md)
+- [Formatting ROS logs and where to find log files](ros_logging.md)
 - [Migrating from Groovy to Hydro](https://github.com/hcrlab/wiki/blob/master/software_engineering/hydro_migration.md)
 
 ## ROS resources
