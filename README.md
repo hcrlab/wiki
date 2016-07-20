@@ -23,6 +23,9 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Point cloud library](pcl)
 - [Tabletop scene interpretation](https://gitlab.cs.washington.edu/lrperlmu/pcl_utils/tree/leah-dev)
 
+## Lab resources
+- [Lab demos](demos)
+
 ## Academia
 - [Academic resources](https://github.com/hcrlab/wiki/tree/master/academia)
 
