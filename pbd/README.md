@@ -1,17 +1,21 @@
 # Programming by Demonstration (PbD)
 
+## How to install PbD on your workstation
+- Read the README for [PR2/pr2_pbd](https://github.com/PR2/pr2_pbd) to see how to install PbD on your computer.
+- For demo purposes, you can just log into the hcrlab account on the robot, so there is no need to install PbD on the robot.
+  If you do want to install PbD on your own account on the robot, the steps are the same.
+
 ## How to run the demo
+The recommended way to run the demo is with RWS.
+See the [instructions](https://github.com/hcrlab/wiki/blob/master/demos/README.md) for running the demo.
 
-This section describes how to run the RViz-based PbD system for a lab demo. It assumes that the computer used for the demo has already been configured properly (see below if you would like to set it up on a new computer or different account).
-
-**Summer 2015:** Please use Justin's desktop computer (walle), with the 'hcrlab' account.
-
-#### Making sure you're on groovy
-As of 12/2015, pbd only works under groovy. Use this [tutorial](https://github.com/hcrlab/wiki/blob/master/pr2/switching_robot_to_groovy.md) to understand how to switch to groovy from hydro.
+### I don't want to use RWS
+This section describes how to run the RViz-based PbD system for a lab demo.
+It assumes that the computer used for the demo has already been configured properly (see below if you would like to set it up on a new computer or different account).
 
 #### Starting the demo
 
-* Log in to the hcrlab account.
+* Log in to the hcrlab account on the robot.
 * Make sure the microphone is connected to the desktop.
 * Terminal 1: Start the robot
 ```
@@ -20,22 +24,28 @@ robot claim
 robot start
 ```
 * Terminal 2: Run the dashboard
-```
-setrobot c1
-rosrun rqt_pr2_dashboard rqt_pr2_dashboard
-```
+
+  ```
+  setrobot c1
+  rosrun rqt_pr2_dashboard rqt_pr2_dashboard
+  ```
+  
 * Activate motors from the kill switch (press green button)
    * Make sure the robot's arms are stiff
    * Make sure the dashboard is clear (everything is green)
 * Back in Terminal 1: Start the back-end of PbD
-```
-roslaunch pr2_pbd_interaction pbd_backend.launch
-```
+
+  ```
+  roslaunch pr2_pbd_interaction pbd_backend.launch
+  ```
+  
 * Terminal 3: Start the front-end of PbD
-```
-setrobot c1
-roslaunch pr2_pbd_interaction pbd_frontend.launch
-```
+
+  ```
+  setrobot c1
+  roslaunch pr2_pbd_interaction pbd_frontend.launch
+  ```
+
 * Turn on the headset of the microphone and test by saying "Test microphone"; the robot should repond with a chime and nod.
 
 #### Programming the robot
@@ -80,7 +90,7 @@ RECORD OBJECT POSE
 
 Complex actions can involve picking up objects and plading them relative to other objects. Note that a pose is automatically saved when you open/close the robot's hand.
 
-### Troubleshooting
+## Troubleshooting
 
 * Cannot ssh to the robot
    * Network problems
@@ -93,12 +103,10 @@ Complex actions can involve picking up objects and plading them relative to othe
     * The kill switch is out of battery
 * RViz does not show anything
    * You forgot to do ```setrobot c1``` in Terminal 3
-* PbD GUI does not show up
 * The robot does not see objects
-* ...
-
+   * Check that the Kinect is working properly by visualizing it in Rviz.
 
 ## Getting set up
-- The PbD demo currently works in ROS groovy. Follow the [Development environment setup](https://github.com/hcrlab/wiki/tree/master/development_environment_setup) before installing it.
-- Installation instructions are available at [PR2/pbd Github README](https://github.com/PR2/pr2_pbd#pr2-programming-by-demonstration)
+- The PbD demo currently works in ROS Hydro. Follow the [Development environment setup](https://github.com/hcrlab/wiki/tree/master/development_environment_setup) before installing it.
+- Installation instructions are available at [PR2/pbd Github README](https://github.com/PR2/pr2_pbd)
 - Older but simpler version of the installation instructions are also availabe in this [Google doc](https://docs.google.com/document/d/1N7hqa6YVgZ_CNCbshKKQrnkInWHVPQBgjMxb6hwm3mI/edit?usp=sharing) (also includes instructions for setting up the microphone)
