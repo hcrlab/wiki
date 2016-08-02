@@ -1,5 +1,10 @@
 # Lab demos
 There are a variety of demos you can run in the lab.
+- [Teleoperation RWS app](#demo-teleoperation-app)
+- [PbD actions RWS app](#demo-pbd-actions-app)
+- [CodeIt! RWS app](#demo-codeit-app)
+- [Programming by Demonstration](#demo-programming-by-demonstration)
+- [Beam](#beam)
 
 ## PR2
 ### RWS
