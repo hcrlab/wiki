@@ -33,7 +33,7 @@ This is useful for `pcl::CropBox`, which allows you to specify a rotation for th
 
 ```cpp
 Eigen::Matrix3f rot_mat;
-float roll = atan2(rot_mat(2, 1), rot_mat(1, 1));
-float pitch = atan2(rot_mat(2, 0), rot_mat(0, 0));
+float roll = atan2(rot_mat(2, 1), rot_mat(2, 2));
+float pitch = asin(-rot_mat(2, 0));
 float yaw = atan2(rot_mat(1, 0), rot_mat(0, 0));
 ```
