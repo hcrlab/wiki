@@ -14,6 +14,7 @@ This wiki contains public information for members of the Human-Centered Robotics
 ## Hardware / software resources
 - [Kinect resources](https://github.com/hcrlab/wiki/blob/master/kinect)
 - [Gazebo resources](https://github.com/hcrlab/wiki/tree/master/gazebo)
+- [Common geometry tasks](geometry)
 
 ## Applications
 - [Voice recognition](https://github.com/hcrlab/wiki/tree/master/voice_recognition)
