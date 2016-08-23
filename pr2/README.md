@@ -6,6 +6,7 @@ Information about using the PR2.
 - [Backpack configuration / Using the PR2 outside the lab](https://github.com/hcrlab/wiki/blob/master/pr2/backpack_configuration.md)
 - [Troubleshooting wireless problems](https://github.com/hcrlab/wiki/blob/master/pr2/wireless_problems.md)
 - [Using Hydro](https://github.com/hcrlab/wiki/blob/master/pr2/pr2_hydro.md)
+- [Launching the Kinect](../kinect/launch.md)
 - [Sound](https://github.com/hcrlab/wiki/blob/master/pr2/sound.md)
 - [`robot` command](https://github.com/hcrlab/wiki/tree/master/pr2/robot_command.md)
 - [Replacing the batteries](https://github.com/hcrlab/wiki/blob/master/pr2/replacing_batteries.md) (dangerous!)
