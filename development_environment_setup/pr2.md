@@ -30,4 +30,4 @@ export ROS_MASTER_URI=http://c1:11311
 export ROBOT=pr2
 ```
 
-Note /etc/ros/distro is a symlink to either /etc/ros/groovy or /etc/ros/hydro, etc.
+Note /etc/ros/distro is a symlink to either /etc/ros/indigo.
