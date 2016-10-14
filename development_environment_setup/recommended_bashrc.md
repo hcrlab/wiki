@@ -3,14 +3,14 @@ We like to add the following to our .bashrc.
 
 There are a few things to customize:
 
-- `source /opt/ros/hydro/setup.bash`: Change this to default to groovy, hydro, etc.
-- `source ~/catkin_ws/devel/setup.bash`: Point this to the correct path for your catkin workspace.
+- `source /opt/ros/indigo/setup.bash`: Change this to default to groovy, hydro, etc.
+- `source ~/catkin_ws_indigo/devel/setup.bash`: Point this to the correct path for your catkin workspace.
 - `MY_IP=$(/sbin/ifconfig eth0 ...`: `eth0` is the name of the network device. If you are on a laptop, you most likely will need to change `eth0` to `wlan0`. You can check the list of network devices by typing `ifconfig`.
 - The terminal prompt `PS1` can be customized. As given, it will turn your terminal prompt purple, and show the current hostname, the current path, and the current ROS Master host.
 - The ROSCONSOLE_FORMAT [can be modified to your liking](http://wiki.ros.org/rosconsole#Console_Output_Formatting). The recommended version prints the node, function, and line number where the logging occurred (if it can be determined).
 
 ```bash
-source /opt/ros/hydro/setup.bash # Default to hydro. Change this to default to another distro if you want.
+source /opt/ros/indigo/setup.bash # Default to indigo. Change this to default to another distro if you want.
 source ~/catkin_ws/devel/setup.bash # Change this to point to your catkin_ws.
 export ROS_HOSTNAME=localhost # Optional, the name of this computer.
 export ROS_MASTER_HOST=localhost # Used to inform us what robot we're connected to.
@@ -66,8 +66,8 @@ function getdeps() {
 }
 
 # Advanced, used to switch between groovy and hydro.
-# Assumes you have ~/catkin_ws_groovy and ~/catkin_ws_hydro
-# Call "setros groovy" or "setros hydro" to switch between them.
+# Assumes you have ~/catkin_ws_hydro and ~/catkin_ws_indigo
+# Call "setros hydro" or "setros indigo" to switch between them.
 # Runs setup commands for ROS stuff.
 function setros() {
   source /opt/ros/$1/setup.bash
