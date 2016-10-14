@@ -11,7 +11,7 @@ We recommend installing 14.04, which is a long term release.
 - When needed, you can install PR2 Indigo packages by searching for `ros-indigo-pr2-*`
 
 ## Update your .bashrc
-See [recommended .bashrc](development_environment_setup/recommended_bashrc.md).
+See [recommended .bashrc](../development_environment_setup/recommended_bashrc.md).
 Change it so that instead of sourcing `/opt/ros/hydro/setup.bash` it sources `/opt/ros/indigo/setup.bash`
 
 ## Migrate your code
