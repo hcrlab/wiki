@@ -36,4 +36,4 @@ If you depend on OpenCV, then make your package depend on `cv_bridge`.
 - Also see the [catkin Indigo migration guide](http://docs.ros.org/indigo/api/catkin/html/adv_user_guide/catkin_migration_indigo.html)
 
 ### Dashboard
-Because `diagnostics_msgs` changed in Indigo, you can't use the PR2 Hydro dashboard with the 
+Because `diagnostics_msgs` changed in Indigo, you can't use the PR2 Hydro dashboard.
