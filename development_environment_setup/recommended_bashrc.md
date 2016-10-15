@@ -11,7 +11,7 @@ There are a few things to customize:
 
 ```bash
 source /opt/ros/indigo/setup.bash # Default to indigo. Change this to default to another distro if you want.
-source ~/catkin_ws/devel/setup.bash # Change this to point to your catkin_ws.
+source ~/catkin_ws_indigo/devel/setup.bash # Change this to point to your catkin_ws.
 export ROS_HOSTNAME=localhost # Optional, the name of this computer.
 export ROS_MASTER_HOST=localhost # Used to inform us what robot we're connected to.
 export ROS_MASTER_URI=http://localhost:11311 # The location of the ROS master.
@@ -40,6 +40,18 @@ function setrobot() {
     export ROS_MASTER_HOST=localhost;
     export ROS_MASTER_URI=http://localhost:11311;
     export ROBOT=sim;
+  elif [ "$1" = "c1" ]; then
+    unset ROBOT;
+    unset ROS_HOSTNAME;
+    export ROS_MASTER_HOST=$1;
+    export ROS_MASTER_URI=http://mayarobot-wired:11311;
+    export ROS_IP=`my_ip`;
+  elif [ "$1" = "mayarobot-wired" ]; then
+    unset ROBOT;
+    unset ROS_HOSTNAME;
+    export ROS_MASTER_HOST=c1;
+    export ROS_MASTER_URI=http://mayarobot-wired:11311;
+    export ROS_IP=`my_ip`;
   else
     unset ROBOT;
     unset ROS_HOSTNAME;
