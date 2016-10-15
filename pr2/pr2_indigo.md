@@ -14,6 +14,7 @@ Because its batteries are no longer useful, the robot has to be plugged in for p
 However, if you *need* the robot to use the wireless network:
 - You can still access the robot through a laptop by connecting to the rosie2LAN wireless network.
 - SSH using the command `ssh 10.68.0.1`
+- On your laptop, you will want to edit `/etc/hosts` and add a mapping from `c1` to `10.68.0.1`, and then restart networking with `sudo service networking restart`. Be sure to undo this once you're done, so that you can resolve the `c1` name after disconnecting from rosie2LAN.
 - On the robot, type `sudo route del default gw 128.208.5.100 dev wan0`. This is necessary for the robot to access the internet, it routes the robot's internet through its wireless router instead of through the WAN port.
 - When you are done, plug the network cable back into robot's WAN port and type (on the robot) `sudo route add default gw 128.208.5.100 dev wan0`. This ensures that the robot will use the wired connection instead of the wireless connection.
 
