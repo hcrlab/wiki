@@ -17,6 +17,7 @@ export ROS_MASTER_HOST=localhost # Used to inform us what robot we're connected 
 export ROS_MASTER_URI=http://localhost:11311 # The location of the ROS master.
 export ROBOT=sim # The type of robot.
 export ROSCONSOLE_FORMAT='${node} ${function}:${line}: ${message}' # Formats log messages, see http://wiki.ros.org/rosconsole#Console_Output_Formatting
+export KINECT1=true # For the Kinect 1 to work on the PR2.
 
 # Get IP address on ethernet
 # If you're on a desktop, change wlan0 to eth0
