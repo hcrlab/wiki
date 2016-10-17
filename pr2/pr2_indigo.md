@@ -31,6 +31,9 @@ We recommend installing 14.04, which is a long term release.
 See [recommended .bashrc](../development_environment_setup/recommended_bashrc.md).
 Change it so that instead of sourcing `/opt/ros/hydro/setup.bash` it sources `/opt/ros/indigo/setup.bash`
 
+- Add `export KINECT1=true` to your .bashrc on the robot to make the Kinect work.
+- Also add it to your desktop's .bashrc for Gazebo simulations.
+
 ### Migrate your code
 #### catkin workspace
 Create a new workspace for Indigo packages.
