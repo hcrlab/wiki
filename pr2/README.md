@@ -16,6 +16,7 @@ Information about using the PR2.
 ## Physical maintenance / repair
 - [Replacing the batteries](https://github.com/hcrlab/wiki/blob/master/pr2/replacing_batteries.md) (dangerous!)
 - [Accessing physical servers](https://github.com/hcrlab/wiki/blob/master/pr2/accessing_servers.md) (dangerous!)
+- [Motorconf tool for swapping casters](motorconf.md)
 
 ## Reference
 - [PR2 manual](https://pr2s.clearpathrobotics.com/wiki/PR2%20Manual)
