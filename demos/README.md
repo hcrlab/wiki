@@ -5,6 +5,7 @@ There are a variety of demos you can run in the lab.
 - [CodeIt! RWS app](#demo-codeit-app)
 - [Programming by Demonstration](#demo-programming-by-demonstration)
 - [Beam](#beam)
+- [Fetch PbD](#fetch-pbd)
 
 ## PR2
 ### RWS
@@ -99,3 +100,17 @@ To actually do programming by demonstration, you need to launch the frontend sep
 1. If you are on Windows or Mac, download the Beam client from the [Suitable website](https://suitabletech.com/installers).
 1. If you are on Linux, you can install the [Beam Chrome extension](https://chrome.google.com/webstore/detail/beam/onglbhicnlbbljbhkilnnkbokcgoheej?hl=en-US)
 1. The software requires a working camera/microphone setup to operate the Beam
+
+## Fetch PbD
+There is a [Fetch Docs page](http://docs.fetchrobotics.com/fetch_pbd.html) for the general demo. This details some of the features of the demo.  
+Specific instructions for our lab:  
+
+1. SSH into astro using the hcrlab account.  
+   Optional to make sure no one else's stuff is running:  
+   1. `sudo service robot stop`  
+   1. `sudo service robot start`  
+1. `source ~/pbd_demo_ws/devel/setup.bash`
+1. `roslaunch fetch_pbd_interaction pbd.launch`
+1. Go to astro:8080 or (astro.cs.washington.edu:8080) in your browser (also works on mobile) for the frontend interface.
+
+Check out the docs page linked about for fancy commandline options when launching the backend. 
