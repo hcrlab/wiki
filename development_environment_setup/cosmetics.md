@@ -33,6 +33,14 @@ To use colors in the git command line, add the following to your ~/.gitconfig
   ui = true
   pager = true
 ```
+Here are some nice alias definitions for git. `gla` is especially helpful.
+```
+alias gs='git status'
+alias gl='git log'
+alias gla='git log --oneline --graph --all --pretty=format:"%C(yellow)% h%C(green)% an%C(auto)%d%C(reset)%<(65,trunc)% s"'
+alias glad='git log --oneline --graph --all --pretty=format:"%C(yellow)% h%C(green)% an%Cblue% ai%C(auto)%d%C(reset)%<(40,trunc)% s"'
+alias gd='git diff'
+```
 
 ### icdiff
 icdiff is a side-by-side diff tool for the terminal that highlights changes. Install it from the Github page: [icdiff](https://github.com/jeffkaufman/icdiff). You can use it with git using `git icdiff`.
