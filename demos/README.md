@@ -113,4 +113,7 @@ Specific instructions for our lab:
 1. `roslaunch fetch_pbd_interaction pbd.launch`
 1. Go to astro:8080 or (astro.cs.washington.edu:8080) in your browser (also works on mobile) for the frontend interface.
 
-Check out the docs page linked about for fancy commandline options when launching the backend. 
+Check out the docs page linked above for fancy commandline options when launching the backend. 
+
+Also if there are any weird bugs, you can clear the couchdb as a last resort, use this command on the robot:
+`curl -X DELETE http://127.0.0.1:5984/fetch_pbd`
