@@ -10,6 +10,7 @@ There are a few things to customize:
 - The ROSCONSOLE_FORMAT [can be modified to your liking](http://wiki.ros.org/rosconsole#Console_Output_Formatting). The recommended version prints the node, function, and line number where the logging occurred (if it can be determined).
 
 ## Desktop .bashrc
+Add this to your .bashrc on your development machine. On the robot, you should use a different .bashrc, shown in the next section below.
 ```bash
 source /opt/ros/indigo/setup.bash # Default to indigo. Change this to default to another distro if you want.
 source ~/catkin_ws_indigo/devel/setup.bash # Change this to point to your catkin_ws.
@@ -90,8 +91,11 @@ function setros() {
 ```
 
 ## Robot .bashrc
+Add this to the end of your .bashrc on the robot.
+If you are configuring a desktop machine instead, using the .bashrc in the section above.
 Be sure to update the robot name (`mayarobot-wired`) with the name of the robot.
 ```bash
+export ROS_ENV_LOADER=/etc/ros/distro/env.sh # This may already be part of your robot's default .bashrc.
 source /opt/ros/indigo/setup.bash # Default to indigo. Change this to default to another distro if you want.
 source ~/catkin_ws_indigo/devel/setup.bash # Change this to point to your catkin_ws.
 export ROS_HOSTNAME=mayarobot-wired # Optional, the name of this computer.
@@ -99,7 +103,6 @@ export ROS_MASTER_URI=http://mayarobot-wired:11311 # The location of the ROS mas
 export ROSCONSOLE_FORMAT='${node} ${function}:${line}: ${message}' # Formats log messages, see http://wiki.ros.org/rosconsole#Console_Output_Formatting
 export KINECT1=true # For the Kinect 1 to work on the PR2.
 export ROBOT=pr2
-export ROS_ENV_LOADER=/etc/ros/distro/env.sh
 
 # Terminal prompt formatting, optional.
 # Makes your terminal look like [host (c1) ~/dir], in purple.
