@@ -9,6 +9,7 @@ There are a few things to customize:
 - The terminal prompt `PS1` can be customized. As given, it will turn your terminal prompt purple, and show the current hostname, the current path, and the current ROS Master host.
 - The ROSCONSOLE_FORMAT [can be modified to your liking](http://wiki.ros.org/rosconsole#Console_Output_Formatting). The recommended version prints the node, function, and line number where the logging occurred (if it can be determined).
 
+## Desktop .bashrc
 ```bash
 source /opt/ros/indigo/setup.bash # Default to indigo. Change this to default to another distro if you want.
 source ~/catkin_ws_indigo/devel/setup.bash # Change this to point to your catkin_ws.
@@ -85,6 +86,29 @@ function getdeps() {
 function setros() {
   source /opt/ros/$1/setup.bash
   source ~/catkin_ws_$1/devel/setup.bash --extend
+}
+```
+
+## Robot .bashrc
+Be sure to update the robot name (`mayarobot-wired`) with the name of the robot.
+```bash
+source /opt/ros/indigo/setup.bash # Default to indigo. Change this to default to another distro if you want.
+source ~/catkin_ws_indigo/devel/setup.bash # Change this to point to your catkin_ws.
+export ROS_HOSTNAME=mayarobot-wired # Optional, the name of this computer.
+export ROS_MASTER_URI=http://mayarobot-wired:11311 # The location of the ROS master.
+export ROSCONSOLE_FORMAT='${node} ${function}:${line}: ${message}' # Formats log messages, see http://wiki.ros.org/rosconsole#Console_Output_Formatting
+export KINECT1=true # For the Kinect 1 to work on the PR2.
+export ROBOT=pr2
+export ROS_ENV_LOADER=/etc/ros/distro/env.sh
+
+# Terminal prompt formatting, optional.
+# Makes your terminal look like [host (c1) ~/dir], in purple.
+# Search for "bash ps1" online to learn more.
+PS1='\[\e[1;35m\][\h \w]$ \[\e[m\]'
+
+# Run this from the root of your catkin_ws to run rosdep update.
+function getdeps() {
+  rosdep install --from-paths src --ignore-src --rosdistro=$ROS_DISTRO -y
 }
 ```
 
