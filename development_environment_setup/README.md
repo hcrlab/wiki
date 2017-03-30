@@ -9,9 +9,9 @@ Run the install scripts given in [installing_ros](https://github.com/hcrlab/wiki
 Example:
 ```
 sudo ./install_utils.sh
-sudo ./install_ros_hydro.sh
+sudo ./install_ros_indigo.sh
 rosdep update
-sudo ./install_pr2_hydro.sh
+sudo ./install_pr2_indigo.sh
 ```
 
 ## 3. Create a catkin workspace
