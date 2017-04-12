@@ -1,12 +1,12 @@
 # Running ROS on a VirtualBox Virtual Machine
 
-## Running RViz in Ubuntu 12.04, OSX 10.10 host
+## Running RViz/Gazebo in Ubuntu 14.04, OSX host
 
-These instructions assume you have installed VirtualBox on your host machine, and have created an Ubuntu VM (also known as a guest machine).
+These instructions assume you have installed VMWare or VirtualBox on your host machine, and have created an Ubuntu VM (also known as a guest machine).
 
-In order to run RViz, I did a few things:
+In order to run RViz, try:
 
-1. Upgrade OpenGL on the guest machine. Run `sudo apt-get install libgl1-mesa-dri`.
+1. Upgrade OpenGL on the guest machine. Run `sudo apt-get install libgl1-mesa-dri-lts-trusty`.
 2. Use software rendering. Run `export LIBGL_ALWAYS_SOFTWARE=1`. Optionally add this to your `~/.bashrc` to avoid running it every time.
 
 Now you should be able to run `rosrun rviz rviz`.
