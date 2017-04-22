@@ -29,6 +29,14 @@ Known issues:
 ### Demo: Code3
 Code3 is our mobile manipulation programming system.
 
+Code3 is preinstalled on the HCR Lab accounts on Robomackerel, hal9k, and rosie-backpack.
+To run a preinstalled version, follow these steps in order:
+1. Make sure RWS is running.
+1. Run ~/code3.sh. This should open Rviz, Custom Landmarks, and the PR2 dashboard.
+1. In RWS, first open the PbD actions app. Wait for "Interaction initialized" to appear in the dashboard.
+1. In RWS, open CodeIt! in a new tab. Wait for "CodeIt! for the PR2 is ready" in the dashboard.
+1. Select a program in CodeIt! and run it. If the "Run" button doesn't turn into a "Stop" button, refresh the page.
+
 If you haven't installed Code3 on your user account, follow the [installation instructions](https://github.com/hcrlab/code3/wiki/Installation).
 
 The [Code3 User Guide](https://github.com/hcrlab/code3/wiki/User-guide) has instructions on how to run Code3 and use it to create programs.
