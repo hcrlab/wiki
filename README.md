@@ -2,26 +2,27 @@
 This wiki contains public information for members of the Human-Centered Robotics Lab.
 
 ## Getting started
-- [Getting started in the HCR lab](https://github.com/hcrlab/wiki/blob/master/getting_started_in_hcrlab.md)
-- [Development environment setup](https://github.com/hcrlab/wiki/tree/master/development_environment_setup)
+- [Getting started in the HCR lab](getting_started_in_hcrlab.md)
+- [Development environment setup](development_environment_setup)
 - Interested in joining? Read *[So you want to join the HCR Lab...](getting_involved_with_hcrlab.md)*
 
 ## Robots
 - [PR2](/pr2)
-- [Fetch](/fetch)
-- [Turtlebot](/turtlebot)
-- [Kubi](/kubi)
+- [Fetch](fetch)
+- [Turtlebot](turtlebot)
+- [Kubi](kubi)
 
 ## Hardware / software resources
-- [Kinect resources](https://github.com/hcrlab/wiki/blob/master/kinect)
-- [Gazebo resources](https://github.com/hcrlab/wiki/tree/master/gazebo)
+- [Kinect resources](kinect)
+- [Gazebo resources](gazebo)
 - [Common geometry tasks](geometry)
+- [MongoDB](mongodb)
 
 ## Applications
-- [Voice recognition](https://github.com/hcrlab/wiki/tree/master/voice_recognition)
-- [Leg detector](https://github.com/hcrlab/wiki/blob/master/leg_detector.md)
-- [Skeleton tracking](https://github.com/hcrlab/wiki/blob/master/skeleton_tracking.md)
-- [Webcam and AR markers](https://github.com/hcrlab/wiki/blob/master/webcam_and_ar_markers.md)
+- [Voice recognition](voice_recognition)
+- [Leg detector](leg_detector.md)
+- [Skeleton tracking](skeleton_tracking.md)
+- [Webcam and AR markers](webcam_and_ar_markers.md)
 - [Point cloud library](pcl)
 - [Tabletop scene interpretation](https://gitlab.cs.washington.edu/lrperlmu/pcl_utils/tree/leah-dev)
 
@@ -29,10 +30,10 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Lab demos](demos)
 
 ## Academia
-- [Academic resources](https://github.com/hcrlab/wiki/tree/master/academia)
+- [Academic resources](academia)
 
 ## Writing
-- [Bibliography Creation with BibTex and Pandoc](https://github.com/hcrlab/wiki/tree/master/pandoc_examples/README.md)
+- [Bibliography Creation with BibTex and Pandoc](pandoc_examples)
 
 ## Tutorials / presentations
 Presentations from HCR Lab on ROS or other software development topics.
@@ -49,8 +50,10 @@ Presentations from HCR Lab on ROS or other software development topics.
 
 ## Courses
 Courses related to the HCR Lab.
+- Robotics capstone, 2017 ([Website](https://sites.google.com/view/cse481sp17/home), [Labs](https://github.com/cse481sp17/cse481c/wiki)) (Fetch)
 - [Introduction to HCI, 2014](https://courses.cs.washington.edu/courses/cse440/15wi/)
-- [Robotics capstone, 2014](https://sites.google.com/site/cse481au14/)
+- [Robotics capstone, 2016](https://sites.google.com/site/cse481sp16/) (Turtlebot)
+- [Robotics capstone, 2014](https://sites.google.com/site/cse481au14/) (Turtlebot)
 - [Human-Robot Interaction seminar, 2014](https://sites.google.com/site/cse599k1/)
-- [Robotics capstone, 2013](https://sites.google.com/site/cse481a/) 
+- [Robotics capstone, 2013](https://sites.google.com/site/cse481a/) (PR2)
 
