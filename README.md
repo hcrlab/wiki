@@ -7,9 +7,10 @@ This wiki contains public information for members of the Human-Centered Robotics
 - Interested in joining? Read *[So you want to join the HCR Lab...](getting_involved_with_hcrlab.md)*
 
 ## Robots
-- [PR2](https://github.com/hcrlab/wiki/tree/master/pr2)
-- [Turtlebot](https://github.com/hcrlab/wiki/tree/master/turtlebot)
-- [Kubi](https://github.com/hcrlab/wiki/tree/master/kubi)
+- [PR2](/pr2)
+- [Fetch](/fetch)
+- [Turtlebot](/turtlebot)
+- [Kubi](/kubi)
 
 ## Hardware / software resources
 - [Kinect resources](https://github.com/hcrlab/wiki/blob/master/kinect)
