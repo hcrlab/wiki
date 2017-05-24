@@ -29,20 +29,21 @@ Known issues:
 ### Demo: Code3
 Code3 is our mobile manipulation programming system.
 
-Code3 is preinstalled on the HCR Lab accounts on Robomackerel, hal9k, and rosie-backpack.
-To run a preinstalled version, follow these steps in order:
+Code3 is preinstalled on the robot.
+To run it, follow these steps in order:
 1. Make sure RWS is running.
-1. Run ~/code3.sh. This should open Rviz, Custom Landmarks, and the PR2 dashboard.
+1. (Recommended) Run the PR2 dashboard: `rosrun rqt_pr2_dashboard rqt_pr2_dashboard`
+1. (Recommended) Run the pr2_pbd frontend: `roslaunch pr2_pbd_interaction pbd_frontend`
 1. In RWS, first open the PbD actions app. Wait for "Interaction initialized" to appear in the dashboard.
 1. In RWS, open CodeIt! in a new tab. Wait for "CodeIt! for the PR2 is ready" in the dashboard.
+1. Take one of the Nexus 7 tablets and go the the PR2's Blinky webpage.
 1. Select a program in CodeIt! and run it. If the "Run" button doesn't turn into a "Stop" button, refresh the page.
 
-If you haven't installed Code3 on your user account, follow the [installation instructions](https://github.com/hcrlab/code3/wiki/Installation).
+A typical demo is to run the tic-tac-toe program or the program that gets/replaces the shoulder-mounted tool.
 
-The [Code3 User Guide](https://github.com/hcrlab/code3/wiki/User-guide) has instructions on how to run Code3 and use it to create programs.
-A typical demo is to run the tic-tac-toe program.
-
-Work is ongoing to install Code3 on the PR2 and to have it run seamlessly.
+If you want to install/run Code3 on your own computer, refer to these resources:
+- [Code3 installation instructions](https://github.com/hcrlab/code3/wiki/Installation)
+- [Code3 User Guide](https://github.com/hcrlab/code3/wiki/User-guide)
 
 Notes:
 - You should wait about 10 seconds after visiting the app to run actions
