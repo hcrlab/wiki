@@ -3,6 +3,12 @@
 ## mongodb_store
 Here are some tips for using [mongodb_store](http://wiki.ros.org/mongodb_store).
 
+## PyMongo version
+You will need to use pymongo version 2.3:
+```
+sudo pip install pymongo==2.3
+```
+
 ### Launching
 Launch file for using the local MongoDB daemon:
 ```xml
