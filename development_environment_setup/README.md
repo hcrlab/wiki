@@ -1,7 +1,7 @@
 # How to set up your environment.
 
 ## 1. Installing Ubuntu
-If you do not already have Ubuntu, we recommend installing Ubuntu 12.04 on your computer. We're currently not using newer versions of Ubuntu because the PR2 uses Groovy or Hydro, which are not supported on the latest versions of Ubuntu. See [REP 3 -- Target Platforms](http://www.ros.org/reps/rep-0003.html) for more information.
+If you do not already have Ubuntu, we recommend installing Ubuntu 14.04 on your computer. ROS Indigo is supported on the Turtlebot, PR2, and Fetch. See [REP 3 -- Target Platforms](http://www.ros.org/reps/rep-0003.html) for more information.
 
 ## 2. Installing ROS
 Run the install scripts given in [installing_ros](https://github.com/hcrlab/wiki/tree/master/development_environment_setup/installing_ros).
