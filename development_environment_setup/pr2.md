@@ -32,3 +32,13 @@ export KINECT1=true
 ```
 
 Note /etc/ros/distro is a symlink to either /etc/ros/indigo.
+
+You should also edit your .bashrc according to our [recommended .bashrc](recommended_bashrc.md).
+The recommended .bashrc will tell you to set ROS_MASTER_URI, etc. to different values.
+On the robot, the values listed above should take precedence.
+
+## First login
+The first time you log in, the system will ask you if you want to set up SSH keys.
+You should say yes.
+This refers to setting up SSH keys between the two computers of the robot, which is highly recommended.
+You can read our [SSH guide](ssh.md) to learn more about other SSH-related tasks you can do.
