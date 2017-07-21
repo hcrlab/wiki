@@ -57,6 +57,7 @@ Listen 8001
     AllowOverride None
     Order allow,deny
     allow from all
+    require all granted
   </Directory>
 
   ErrorLog ${APACHE_LOG_DIR}/error.log
