@@ -1,2 +1,1 @@
-- [[Serving static content]]
-- [[Serving URDF files][
+- [Serving URDF files](serving_urdf.md)
