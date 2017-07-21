@@ -17,6 +17,7 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Gazebo resources](gazebo)
 - [Common geometry tasks](geometry)
 - [MongoDB](mongodb)
+- [Web development](web_development)
 
 ## Applications
 - [Voice recognition](voice_recognition)
