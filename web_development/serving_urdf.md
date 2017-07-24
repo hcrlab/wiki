@@ -3,6 +3,7 @@ To serve a URDF of a robot in a way that works with [ros3djs](http://wiki.ros.or
 ```
 mkdir ~/local/collada
 cp -r /opt/ros/indigo/share/pr2_description ~/local/collada
+cp -r /opt/ros/indigo/share/fetch_description ~/local/collada
 ```
 
 You need to serve it as static content, but you must explicitly allow cross-origin requests.
