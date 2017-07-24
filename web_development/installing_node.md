@@ -13,6 +13,6 @@ nvm install node
 ```
 
 You should now have Node installed, check by running:
-````
+```
 node -v
 ```
