@@ -6,9 +6,12 @@ cp -r /opt/ros/indigo/share/pr2_description ~/local/collada
 ```
 
 You need to serve it as static content, but you must explicitly allow cross-origin requests.
-One way to do this is to use [Caddy](https://caddyserver.com/)
-- Click download, but before downloading, add the "http.cors" plugin.
-- Install caddy. Typically this just means untarring it and adding it to your PATH.
+One way to do this is to use the [Caddy](https://caddyserver.com/) web server:
+
+```
+curl https://getcaddy.com | bash -s http.cors
+```
+
 - Add the following Caddyfile to ~/local/collada:
 
 ```
