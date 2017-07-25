@@ -32,8 +32,8 @@ Code3 is our mobile manipulation programming system.
 Code3 is preinstalled on the robot.
 To run it, follow these steps in order:
 1. Make sure RWS is running.
-1. (Recommended) Run the PR2 dashboard: `rosrun rqt_pr2_dashboard rqt_pr2_dashboard`
-1. (Recommended) Run the pr2_pbd frontend: `roslaunch pr2_pbd_interaction pbd_frontend`
+1. (Recommended) Run the PR2 dashboard: `setrobot c1; rosrun rqt_pr2_dashboard rqt_pr2_dashboard`
+1. (Recommended) Run the pr2_pbd frontend: `setrobot c1; roslaunch pr2_pbd_interaction pbd_frontend.launch`
 1. In RWS, first open the PbD actions app. Wait for "Interaction initialized" to appear in the dashboard.
 1. In RWS, open CodeIt! in a new tab. Wait for "CodeIt! for the PR2 is ready" in the dashboard.
 1. Take one of the Nexus 7 tablets and go the the PR2's Blinky webpage.
