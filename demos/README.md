@@ -3,6 +3,8 @@ There are a variety of demos you can run in the lab.
 - [Teleoperation RWS app](#demo-teleoperation-app)
 - [Code3](#demo-code3)
 - [Fetch PbD](#fetch-pbd)
+- [Fetch Rapid PbD](#fetch-rapid-pbd)
+- [Fetch Navigation](#fetch-navigation)
 - [Fetch CodeIt](#fetch-codeit)
 - [Beam](#beam)
 
@@ -55,6 +57,10 @@ Notes:
   tail -f js_interpreter-1-stdout.log # Use tab completion to find the right file
   tail -f pr2_pbd_interaction-5.log # Use tab completion to find the right file
   ```
+  
+### Demo: PR2 RapidPbD
+- Go to the robot website
+- Go to RapidPbD
 
 ### Troubleshooting for RWS apps on the PR2
 #### RWS fails to start up
@@ -83,7 +89,7 @@ You can close and relaunch an app
 1. Most apps have some kind of startup time, so it's a good idea to wait another 10 seconds after visiting an app page to start using it.
 
 ## Fetch
-### Fetch PbD
+### Demo: Fetch PbD
 There is a [Fetch Docs page](http://docs.fetchrobotics.com/fetch_pbd.html) for the general demo. This details some of the features of the demo.  
 Specific instructions for our lab:  
 
@@ -100,11 +106,30 @@ Check out the docs page linked above for fancy commandline options when launchin
 Also if there are any weird bugs, you can clear the couchdb as a last resort, use this command on the robot:
 `curl -X DELETE http://127.0.0.1:5984/fetch_pbd`
 
-### Fetch CodeIt
-You can run Fetch CodeIt by visiting `astro/` or `astro.cs.washington.edu` in a web browser and clicking on CodeIt!.
-So far the only functionality is to open/close the gripper.
+### Demo: Fetch Rapid PbD
+- Go to astro.cs.washington.edu
+- Click on "Rapid PbD" and make a program
+- You can execute programs from the interface, or run them from CodeIt.
+- If you have any problems, restart the app by clicking on the "X" next to its name, waiting a few seconds, then refreshing the page.
 
-## Beam
+### Demo: Fetch Navigation
+- Go to astro.cs.washington.edu
+- Click on "Map annotator"
+- Open Rviz and add a map display and an interactive marker display. The interactive markers update topic should be set to `/map_annotator/map_poses/update`.
+- In the map annotator app, click "Add pose" to define a new location.
+- An interactive marker will appear at the origin of the map frame in Rviz. Drag the arrow to where you want it to be.
+- You can click "Go to" to navigate to that pose.
+- You can also navigate to poses from CodeIt.
+- If you have any problems, restart the app by clicking on the "X" next to its name, waiting a few seconds, then refreshing the page.
+
+### Demo: Fetch CodeIt
+You can run Fetch CodeIt by visiting `astro/` or `astro.cs.washington.edu` in a web browser and clicking on CodeIt!.
+- Also be sure to run the "Map annotator" and "Rapid PbD" app
+- You can run navigation and Rapid PbD programs within a CodeIt program
+- If you have any problems, restart the app by clicking on the "X" next to its name, waiting a few seconds, then refreshing the page.
+- A good demo is "Put away trash." Set `firstLocation` to the name of the location to pick up from before running.
+
+## Demo: Beam
 1. Ask for access to the Beam
 1. If you are on Windows or Mac, download the Beam client from the [Suitable website](https://suitabletech.com/installers).
 1. If you are on Linux, you can install the [Beam Chrome extension](https://chrome.google.com/webstore/detail/beam/onglbhicnlbbljbhkilnnkbokcgoheej?hl=en-US)
