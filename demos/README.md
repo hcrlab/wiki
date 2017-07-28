@@ -126,6 +126,7 @@ Also if there are any weird bugs, you can clear the couchdb as a last resort, us
 You can run Fetch CodeIt by visiting `astro/` or `astro.cs.washington.edu` in a web browser and clicking on CodeIt!.
 - Also be sure to run the "Map annotator" and "Rapid PbD" app
 - You can run navigation and Rapid PbD programs within a CodeIt program
+- Before running a program, use a Nexus 7 tablet and load Blinky on Astro at astro:8000/. It works best if you go to the Chrome menu and select "Add to Home," then open the app from the Android home screen.
 - If you have any problems, restart the app by clicking on the "X" next to its name, waiting a few seconds, then refreshing the page.
 - A good demo is "Put away trash." Set `firstLocation` to the name of the location to pick up from before running.
 
