@@ -18,6 +18,7 @@ This wiki contains public information for members of the Human-Centered Robotics
 - [Common geometry tasks](geometry)
 - [MongoDB](mongodb)
 - [Web development](web_development)
+- [OpenCV](opencv)
 
 ## Applications
 - [Voice recognition](voice_recognition)
