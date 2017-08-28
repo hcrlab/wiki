@@ -2,6 +2,7 @@
 
 ## How to install PbD on your workstation
 - Read the README for [PR2/pr2_pbd](https://github.com/PR2/pr2_pbd) to see how to install PbD on your computer.
+    - if you run into problems building PbD because of a problem with gmock, try installing the latest gmock (see [here](https://github.com/jstnhuang/rapid/blob/indigo-devel/.travis.yml#L61))
 - For demo purposes, you can just log into the hcrlab account on the robot, so there is no need to install PbD on the robot.
   If you do want to install PbD on your own account on the robot, the steps are the same.
 
