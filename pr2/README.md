@@ -21,6 +21,8 @@ Information about using the PR2.
 ## Reference
 - [PR2 manual](https://pr2s.clearpathrobotics.com/wiki/PR2%20Manual)
 - [PR2 service information](https://pr2s.clearpathrobotics.com/wiki/PR2%20Service%20Information)
+- [PR2 resources](https://www.clearpathrobotics.com/pr2-resources/)
+- [PR2 maintenance](https://mirror.umd.edu/roswiki/attachments/Events(2f)PR2BetaTraining/pr2_maintenance.pdf)
 
 ## Nitty-gritty
 - [`robot` command](https://github.com/hcrlab/wiki/tree/master/pr2/robot_command.md)
