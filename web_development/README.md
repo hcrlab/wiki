@@ -1,1 +1,2 @@
+- [Installing Node.js](installing_node.md)
 - [Serving URDF files](serving_urdf.md)
