@@ -10,7 +10,7 @@ You need to serve it as static content, but you must explicitly allow cross-orig
 One way to do this is to use the [Caddy](https://caddyserver.com/) web server:
 
 ```
-curl https://getcaddy.com | bash -s http.cors
+curl https://getcaddy.com | bash -s personal http.cors
 ```
 
 - Add the following Caddyfile to ~/local/collada:
