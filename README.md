@@ -4,7 +4,6 @@ This wiki contains public information for members of the Human-Centered Robotics
 ## Getting started
 - [Getting started in the HCR lab](getting_started_in_hcrlab.md)
 - [Development environment setup](development_environment_setup)
-- Interested in joining? Read *[So you want to join the HCR Lab...](getting_involved_with_hcrlab.md)*
 
 ## Robots
 - [PR2](/pr2)
