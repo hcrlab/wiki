@@ -21,17 +21,17 @@ sudo ls
 ```
 
 ## Env loader
-Add the following line to the end of your .bashrc on the robot. This only needs to be done on the PR2.
+On our lab's PR2, creating an account will add these lines to your .bashrc.
+For other PR2s (and ROS robots in general), add something like this
 ```bash
 export ROS_ENV_LOADER=/etc/ros/distro/env.sh
 export ROS_HOSTNAME=mayarobot-wired
-export ROS_MASTER_HOST=mayarobot-wired
 export ROS_MASTER_URI=http://mayarobot-wired:11311
 export ROBOT=pr2
 export KINECT1=true
 ```
 
-Note /etc/ros/distro is a symlink to either /etc/ros/indigo.
+Note /etc/ros/distro is a symlink to the setup files for the most recent version of ROS installed on the robot (currently indigo).
 
 You should also edit your .bashrc according to our [recommended .bashrc](recommended_bashrc.md).
 The recommended .bashrc will tell you to set ROS_MASTER_URI, etc. to different values.
