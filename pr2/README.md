@@ -3,6 +3,7 @@ Information about using the PR2.
 
 ## Getting started
 - [Getting set up on the PR2](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/pr2.md)
+- [Usage guide for the PR2](https://github.com/hcrlab/wiki/blob/master/pr2/usage_guide.md)
 - [Using Indigo](https://github.com/hcrlab/wiki/blob/master/pr2/pr2_indigo.md)
 - [Launching the Kinect](../kinect/launch.md)
 - [Troubleshooting](https://github.com/hcrlab/wiki/blob/master/pr2/troubleshooting.md)
