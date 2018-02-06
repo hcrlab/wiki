@@ -42,3 +42,6 @@ The first time you log in, the system will ask you if you want to set up SSH key
 You should say yes.
 This refers to setting up SSH keys between the two computers of the robot, which is highly recommended.
 You can read our [SSH guide](ssh.md) to learn more about other SSH-related tasks you can do.
+
+## Using the PR2
+See the usage guide for details on how to start, stop, and run programs on the PR2: [Usage Guide](https://github.com/hcrlab/wiki/blob/master/pr2/usage_guide.md)
