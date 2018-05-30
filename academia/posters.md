@@ -12,7 +12,7 @@
 This workflow has worked for lab members in the past. CSE support has a page on [poster printing](https://www.cs.washington.edu/lab/printing/poster-printer).
 
 ## Templates and examples
-- [Google Slides](https://docs.google.com/presentation/d/1zlhNrCor8dvBUCoq2JXy_o81-On_C_tk56Hf9TPVCvQ/edit?pli=1#slide=id.p13). Open it while signed into your Google account, then select File->Make a copy
+- [Google Slides example](https://docs.google.com/presentation/d/1TdERL9Yxk6FqIf8_iVMoln5TnkdmfjcJSkv6M4vg408/edit?usp=sharing). Open it while signed into your Google account, then select File->Make a copy
 - [Examples from the HCR lab](https://drive.google.com/folderview?id=0B5wyq66plcULZWFTRmpWLXJEYU0&usp=drive_web)
 - More templates available on the [CSE support page](https://www.cs.washington.edu/lab/printing/poster-printer)
 
