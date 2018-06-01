@@ -8,6 +8,7 @@ Information about using the PR2.
 - [Launching the Kinect](../kinect/launch.md)
 - [Troubleshooting](https://github.com/hcrlab/wiki/blob/master/pr2/troubleshooting.md)
 - [Sound](https://github.com/hcrlab/wiki/blob/master/pr2/sound.md)
+- [Calibration](calibration.md)
 
 ## Networking
 - [Backpack configuration / Using the PR2 outside the lab](https://github.com/hcrlab/wiki/blob/master/pr2/backpack_configuration.md)
