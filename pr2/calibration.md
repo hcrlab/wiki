@@ -10,7 +10,21 @@ export PYTHONPATH=`rospack find pr2_calibration_launch`/pr2_urdf_parser_py:$PYTH
 ```
 And then running capture_data.launch in the same terminal window.
 
-Also, be sure to start up the kinect, and map the camera name to /kinect_head.
+Also, be sure to start up the kinect, and map the camera name to /kinect_head:
+```xml
+<launch>
+  <arg name="kinect_camera_name" value="kinect_head" />
+
+  <!-- Turn on the Kinect -->
+  <include file="$(find freenect_launch)/launch/freenect.launch">
+    <arg name="depth_registration" value="true"/>
+    <arg name="camera" value="$(arg kinect_camera_name)"/>
+    <arg name="rgb_frame_id" value="head_mount_kinect_rgb_optical_frame" />
+    <arg name="depth_frame_id" value="head_mount_kinect_ir_optical_frame" />
+    <arg name="publish_tf" value="false"/>
+  </include>
+</launch>
+```
 
 # After reboots
 When the robot reboots, it will run a calibration routine to compute certain joint offsets
