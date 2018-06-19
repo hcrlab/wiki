@@ -17,6 +17,12 @@ sudo ./install_pr2_indigo.sh
 ## 3. Set up your .bashrc
 Copy the [recommended .bashrc](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/recommended_bashrc.md) to the end of your ~/.bashrc file. Be sure to update it according to what ROS distribution you are using, whether you are on a desktop or laptop, etc.
 
+Source your ~/.bashrc. You may see an error about not having a catkin workspace, but that's okay.
+You will create your workspace in the next step.
+```
+source ~/.bashrc
+```
+
 ## 4. Create a catkin workspace
 ```
 mkdir -p ~/catkin_ws/src
