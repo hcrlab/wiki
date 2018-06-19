@@ -14,15 +14,15 @@ rosdep update
 sudo ./install_pr2_indigo.sh
 ```
 
-## 3. Create a catkin workspace
+## 3. Set up your .bashrc
+Copy the [recommended .bashrc](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/recommended_bashrc.md) to the end of your ~/.bashrc file. Be sure to update it according to what ROS distro you're using, whether you're on a desktop or laptop, etc.
+
+## 4. Create a catkin workspace
 ```
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
 catkin_make
 ```
-
-## 4. Set up your .bashrc
-Copy the [recommended .bashrc](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/recommended_bashrc.md) to the end of your ~/.bashrc file. Be sure to update it according to what ROS distro you're using, whether you're on a desktop or laptop, etc.
 
 ## 5. Set up SSH
 See the [SSH guide](https://github.com/hcrlab/wiki/blob/master/development_environment_setup/ssh.md). It describes many things you can do with SSH, but you will at least want to:
