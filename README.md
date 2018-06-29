@@ -51,6 +51,7 @@ Presentations from HCR Lab on ROS or other software development topics.
 
 ## Courses
 Courses related to the HCR Lab.
+- Robotics capstone, 2018 ([Website](https://sites.google.com/view/cse481wi18/home), [Labs](https://github.com/cse481wi18/cse481wi18/wiki)) (Fetch)
 - Robotics capstone, 2017 ([Website](https://sites.google.com/view/cse481sp17/home), [Labs](https://github.com/cse481sp17/cse481c/wiki)) (Fetch)
 - [Introduction to HCI, 2014](https://courses.cs.washington.edu/courses/cse440/15wi/)
 - [Robotics capstone, 2016](https://sites.google.com/site/cse481sp16/) (Turtlebot)
